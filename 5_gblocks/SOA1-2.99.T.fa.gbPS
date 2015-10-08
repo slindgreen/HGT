@@ -1,0 +1,70 @@
+%!PS-Adobe-3.0 EPSF-3.0
+%%BoundingBox: 20 20 200 2535 
+%%Title: 5_gblocks/SOA1-2.blastclust_99.tcoffee.aln.fa
+%%Creator Gblocks 0.91b
+%%Pages: 1
+
+/seq {
+newpath
+ 25   moveto
+0  10   rlineto
+  35   lineto
+0 -10 rlineto
+closepath
+fill
+} def
+
+/block {
+newpath
+ 10   moveto
+0  10   rlineto
+  20   lineto
+0 -10 rlineto
+closepath
+fill
+} def
+
+/sh1 {
+30 add
+} def
+
+/sh2 {
+31 add
+} def
+
+/Helvetica findfont 12 scalefont setfont
+
+gsave
+180 0 translate
+90 rotate
+
+newpath
+30 100 moveto
+(Blocks found by Gblocks version 0.91b for the file SOA1-2.blastclust_99.tcoffee.aln.fa.gbPS) show
+30 80 moveto
+(Parameters used: 35 35 8 7 3) show
+
+1 sh1 2485 sh2 seq
+
+256 sh1 267 sh2 block
+443 sh1 464 sh2 block
+559 sh1 633 sh2 block
+821 sh1 840 sh2 block
+960 sh1 978 sh2 block
+1032 sh1 1046 sh2 block
+1126 sh1 1149 sh2 block
+1227 sh1 1238 sh2 block
+1258 sh1 1693 sh2 block
+1703 sh1 1710 sh2 block
+1721 sh1 1733 sh2 block
+1758 sh1 1775 sh2 block
+1789 sh1 1911 sh2 block
+1935 sh1 2023 sh2 block
+2131 sh1 2163 sh2 block
+2273 sh1 2290 sh2 block
+2330 sh1 2390 sh2 block
+2451 sh1 2469 sh2 block
+
+grestore
+showpage
+%%EOF

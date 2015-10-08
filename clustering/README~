@@ -1,0 +1,19 @@
+# Cluster the full fasta file
+# Extract ids
+# Extract fasta sequences
+for id in 90 95 99
+do
+blastclust -i ASTA_SOA1.with_additional.full.fa -o ASTA_SOA1.blastclust_$id.out -p T -S $id -L .9 -b T -a 60 
+cut -f1 --delim=" " ASTA_SOA1.blastclust_$id.out > ASTA_SOA1.blastclust_$id.ids
+blastdbcmd -db /home/databases/nr/gz/nr -entry_batch ASTA_SOA1.blastclust_$id.ids > ASTA_SOA1.blastclust_$id.fa
+done
+
+# Double check additional sequences (Fusarium and sensu stricto)
+
+# Make MUSCLE alignment
+for file in ASTA_SOA1.blastclust_*.fa
+do
+base=`basename $file .fa`
+muscle -in $file -out $base.aln -html -maxiters 2
+done
+

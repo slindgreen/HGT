@@ -1,0 +1,1389 @@
+Blast4-archive ::= {
+  request {
+    ident "2.2.30+",
+    body queue-search {
+      program "blastn",
+      service "megablast",
+      queries bioseq-set {
+        seq-set {
+          seq {
+            id {
+              local str "Query_1"
+            },
+            descr {
+              user {
+                type str "CFastaReader",
+                data {
+                  {
+                    label str "DefLine",
+                    data str ">gi|75766611|gb|DQ189223.1| Emericella nidulans
+ alternative sulfate transporter (astA) gene, complete cds"
+                  }
+                }
+              },
+              title "gi|75766611|gb|DQ189223.1| Emericella nidulans
+ alternative sulfate transporter (astA) gene, complete cds"
+            },
+            inst {
+              repr raw,
+              mol na,
+              length 2441,
+              seq-data ncbi2na 'D98E394D41A773A609FAD832687AB9521D5624251257CD
+460DD94F594E9FD797A493A50835654ADFE7DFFFE624653E5FE76E26EA328DD96A202E303A3938
+5A52549A3E7A3640789B74087374D013A5871035143547B600408E3B24B978B3B8C87A17E8A288
+60A70980B1B3109DDBDE73239149C14CB56CE487A174E34E54D705FA9F7FE5E6E2D44B785CB9D8
+80A57860FBDC89D859A413A5067345841FCE821B6930142143D06DA5248E77776836E78680D509
+04E35EC59B6956903A7447507FF77FA4DB8B1BF425F52668C689BD3E411BF5D7AB3458B4AFD3D5
+AE9F3A11DD06EB11198621A409BB4E37DC7FA0140FA5298B90279D9B3ACFF9139AAEFA2940BAFA
+F7A7BF93E3AAD7D16EFC9AFF33DABDFFE7A1DBF081513246F5E5823B52BD1A26A2F933FE4862AD
+F9F8E350E0A808208808CA9DAA7FC2226BCBD97F4E5FD3C1EF9C07FDCFFFFEE9CCBD1A1E9B37AB
+53F5E3C6776043A5541B9FD847CE55743ED14BF69F6B29FB490E73A49EDADEFDC4AD52EDBD93D2
+7AB778D1CB8B6DCC515269FD6A53DD05233F550FCC905B629805B4E7A8F7DED3F9CAB337D05817
+F161B4375BA2F6F1F69B6DE86406F6813FDD159E04F97A7B47C7E408F68926A47E73A7AB09F117
+259F3516A0608C4DE7041E5E7A3F322D34E0E50CC928373A2448CF59DE18C259FCD86EAFC9BE57
+49B9D96FA5FBDE94FB9ACEE8C638D4DB69909F4A7BE28EA262421121963440787C84269933654F
+27A6BC2A1EE62F4589ECF6FEDE38D3F98F60901DEF8CF3CCDDDC7FA72F4CDF2AF24C340101FF1F
+D5C7EF179BA4B3EB88249BCB800A8A01B9290BC714565A8BB4F7F4000000020080200089473B18
+E2D840'H
+            }
+          }
+        }
+      },
+      subject database "/home/databases/ENSEMBL/fungi_v28/blastdb/Ensembl_Fung
+i_genomes_sensu_stricto",
+      algorithm-options {
+        {
+          name "EvalueThreshold",
+          value cutoff e-value { 1, 10, 1 }
+        },
+        {
+          name "MaskAtHash",
+          value boolean TRUE
+        },
+        {
+          name "DustFilteringLevel",
+          value integer 20
+        },
+        {
+          name "DustFilteringWindow",
+          value integer 64
+        },
+        {
+          name "DustFilteringLinker",
+          value integer 1
+        },
+        {
+          name "UngappedMode",
+          value boolean FALSE
+        },
+        {
+          name "HitlistSize",
+          value integer 500
+        },
+        {
+          name "EffectiveSearchSpace",
+          value big-integer 31069512015752
+        }
+      },
+      program-options {
+        {
+          name "LCaseMask",
+          value query-mask {
+            locations {
+              packed-int {
+                {
+                  from 166,
+                  to 172,
+                  id local str "Query_1"
+                },
+                {
+                  from 166,
+                  to 172,
+                  id local str "Query_1"
+                },
+                {
+                  from 1298,
+                  to 1306,
+                  id local str "Query_1"
+                },
+                {
+                  from 1298,
+                  to 1306,
+                  id local str "Query_1"
+                },
+                {
+                  from 2383,
+                  to 2417,
+                  id local str "Query_1"
+                },
+                {
+                  from 2383,
+                  to 2417,
+                  id local str "Query_1"
+                }
+              }
+            },
+            frame plus1
+          }
+        }
+      }
+    }
+  },
+  results {
+    alignments {
+      {
+        type partial,
+        dim 2,
+        score {
+          {
+            id str "score",
+            value int 1503
+          },
+          {
+            id str "e_value",
+            value real { 0, 10, 0 }
+          },
+          {
+            id str "bit_score",
+            value real { 277663472169754, 10, -11 }
+          },
+          {
+            id str "num_ident",
+            value int 1817
+          },
+          {
+            id str "hsp_percent_coverage",
+            value real { 807130274477673, 10, -13 }
+          }
+        },
+        segs denseg {
+          dim 2,
+          numseg 35,
+          ids {
+            local str "Query_1",
+            local str "Aspergillus_nidulans_fgsc_a4_AACD01000054"
+          },
+          starts {
+            4,
+            164751,
+            -1,
+            164973,
+            226,
+            164974,
+            398,
+            -1,
+            399,
+            165146,
+            400,
+            -1,
+            402,
+            165147,
+            -1,
+            165325,
+            580,
+            165326,
+            582,
+            -1,
+            583,
+            165328,
+            635,
+            -1,
+            636,
+            165380,
+            939,
+            -1,
+            940,
+            165683,
+            -1,
+            165686,
+            943,
+            165687,
+            -1,
+            166049,
+            1305,
+            166050,
+            -1,
+            166051,
+            1306,
+            166052,
+            -1,
+            166055,
+            1309,
+            166056,
+            -1,
+            166057,
+            1310,
+            166058,
+            -1,
+            166061,
+            1313,
+            166062,
+            1370,
+            -1,
+            1371,
+            166119,
+            1556,
+            -1,
+            1557,
+            166304,
+            1768,
+            -1,
+            1773,
+            166515,
+            -1,
+            166547,
+            1805,
+            166549
+          },
+          lens {
+            222,
+            1,
+            172,
+            1,
+            1,
+            2,
+            178,
+            1,
+            2,
+            1,
+            52,
+            1,
+            303,
+            1,
+            3,
+            1,
+            362,
+            1,
+            1,
+            1,
+            3,
+            1,
+            1,
+            1,
+            3,
+            1,
+            57,
+            1,
+            185,
+            1,
+            211,
+            5,
+            32,
+            2,
+            157
+          },
+          strands {
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus
+          }
+        }
+      },
+      {
+        type partial,
+        dim 2,
+        score {
+          {
+            id str "score",
+            value int 1503
+          },
+          {
+            id str "e_value",
+            value real { 0, 10, 0 }
+          },
+          {
+            id str "bit_score",
+            value real { 277663472169754, 10, -11 }
+          },
+          {
+            id str "num_ident",
+            value int 1817
+          },
+          {
+            id str "hsp_percent_coverage",
+            value real { 807130274477673, 10, -13 }
+          }
+        },
+        segs denseg {
+          dim 2,
+          numseg 35,
+          ids {
+            local str "Query_1",
+            local str "Aspergillus_nidulans_ASM1142v1_VI"
+          },
+          starts {
+            1805,
+            1233575,
+            -1,
+            1233732,
+            1774,
+            1233734,
+            1769,
+            -1,
+            1558,
+            1233765,
+            1557,
+            -1,
+            1375,
+            1233976,
+            1374,
+            -1,
+            1313,
+            1234158,
+            -1,
+            1234219,
+            1310,
+            1234220,
+            -1,
+            1234223,
+            1309,
+            1234224,
+            -1,
+            1234225,
+            1306,
+            1234226,
+            -1,
+            1234229,
+            1305,
+            1234230,
+            -1,
+            1234231,
+            943,
+            1234232,
+            -1,
+            1234594,
+            940,
+            1234595,
+            939,
+            -1,
+            636,
+            1234598,
+            635,
+            -1,
+            583,
+            1234901,
+            582,
+            -1,
+            580,
+            1234953,
+            -1,
+            1234955,
+            402,
+            1234956,
+            400,
+            -1,
+            399,
+            1235134,
+            398,
+            -1,
+            229,
+            1235135,
+            -1,
+            1235304,
+            4,
+            1235305
+          },
+          lens {
+            157,
+            2,
+            31,
+            5,
+            211,
+            1,
+            182,
+            1,
+            61,
+            1,
+            3,
+            1,
+            1,
+            1,
+            3,
+            1,
+            1,
+            1,
+            362,
+            1,
+            3,
+            1,
+            303,
+            1,
+            52,
+            1,
+            2,
+            1,
+            178,
+            2,
+            1,
+            1,
+            169,
+            1,
+            225
+          },
+          strands {
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus
+          }
+        }
+      },
+      {
+        type partial,
+        dim 2,
+        score {
+          {
+            id str "score",
+            value int 239
+          },
+          {
+            id str "e_value",
+            value real { 1975715286242, 10, -132 }
+          },
+          {
+            id str "bit_score",
+            value real { 442469561142469, 10, -12 }
+          },
+          {
+            id str "num_ident",
+            value int 528
+          },
+          {
+            id str "hsp_percent_coverage",
+            value real { 280297009422368, 10, -13 }
+          }
+        },
+        segs denseg {
+          dim 2,
+          numseg 3,
+          ids {
+            local str "Query_1",
+            local str "Beauveria_bassiana_d1_5_contig00295"
+          },
+          starts {
+            579,
+            13858,
+            582,
+            -1,
+            583,
+            13861
+          },
+          lens {
+            3,
+            1,
+            668
+          },
+          strands {
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus
+          }
+        }
+      },
+      {
+        type partial,
+        dim 2,
+        score {
+          {
+            id str "score",
+            value int 233
+          },
+          {
+            id str "e_value",
+            value real { 427667237214076, 10, -131 }
+          },
+          {
+            id str "bit_score",
+            value real { 431389663228442, 10, -12 }
+          },
+          {
+            id str "num_ident",
+            value int 523
+          },
+          {
+            id str "hsp_percent_coverage",
+            value real { 278658336747235, 10, -13 }
+          }
+        },
+        segs denseg {
+          dim 2,
+          numseg 1,
+          ids {
+            local str "Query_1",
+            local str "Beauveria_bassiana_arsef_2860_BBA_S00003"
+          },
+          starts {
+            583,
+            712287
+          },
+          lens {
+            668
+          },
+          strands {
+            minus,
+            plus
+          }
+        }
+      },
+      {
+        type partial,
+        dim 2,
+        score {
+          {
+            id str "score",
+            value int 182
+          },
+          {
+            id str "e_value",
+            value real { 959068792806602, 10, -103 }
+          },
+          {
+            id str "bit_score",
+            value real { 337210530959211, 10, -12 }
+          },
+          {
+            id str "num_ident",
+            value int 527
+          },
+          {
+            id str "hsp_percent_coverage",
+            value real { 282755018435068, 10, -13 }
+          }
+        },
+        segs denseg {
+          dim 2,
+          numseg 55,
+          ids {
+            local str "Query_1",
+            local str "Endocarpon_pusillum_z07020_C713953"
+          },
+          starts {
+            583,
+            23524,
+            619,
+            -1,
+            620,
+            23560,
+            621,
+            -1,
+            622,
+            23561,
+            -1,
+            23565,
+            626,
+            23566,
+            -1,
+            23569,
+            629,
+            23570,
+            -1,
+            23848,
+            907,
+            23849,
+            910,
+            -1,
+            911,
+            23852,
+            1016,
+            -1,
+            1017,
+            23957,
+            -1,
+            23962,
+            1022,
+            23963,
+            -1,
+            23982,
+            1041,
+            23983,
+            1045,
+            -1,
+            1046,
+            23987,
+            -1,
+            23992,
+            1051,
+            23993,
+            1054,
+            -1,
+            1055,
+            23996,
+            1081,
+            -1,
+            1082,
+            24022,
+            1086,
+            -1,
+            1087,
+            24026,
+            -1,
+            24031,
+            1092,
+            24033,
+            -1,
+            24073,
+            1132,
+            24074,
+            1136,
+            -1,
+            1137,
+            24078,
+            1171,
+            -1,
+            1172,
+            24112,
+            1174,
+            -1,
+            1175,
+            24114,
+            -1,
+            24116,
+            1177,
+            24117,
+            -1,
+            24121,
+            1181,
+            24122,
+            1218,
+            -1,
+            1219,
+            24159,
+            -1,
+            24163,
+            1223,
+            24164,
+            1228,
+            -1,
+            1229,
+            24169,
+            1230,
+            -1,
+            1231,
+            24170,
+            -1,
+            24175,
+            1236,
+            24177,
+            1252,
+            -1,
+            1253,
+            24193
+          },
+          lens {
+            36,
+            1,
+            1,
+            1,
+            4,
+            1,
+            3,
+            1,
+            278,
+            1,
+            3,
+            1,
+            105,
+            1,
+            5,
+            1,
+            19,
+            1,
+            4,
+            1,
+            5,
+            1,
+            3,
+            1,
+            26,
+            1,
+            4,
+            1,
+            5,
+            2,
+            40,
+            1,
+            4,
+            1,
+            34,
+            1,
+            2,
+            1,
+            2,
+            1,
+            4,
+            1,
+            37,
+            1,
+            4,
+            1,
+            5,
+            1,
+            1,
+            1,
+            5,
+            2,
+            16,
+            1,
+            8
+          },
+          strands {
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus
+          }
+        }
+      },
+      {
+        type partial,
+        dim 2,
+        score {
+          {
+            id str "score",
+            value int 170
+          },
+          {
+            id str "e_value",
+            value real { 449379236176273, 10, -96 }
+          },
+          {
+            id str "bit_score",
+            value real { 315050735131156, 10, -12 }
+          },
+          {
+            id str "num_ident",
+            value int 380
+          },
+          {
+            id str "hsp_percent_coverage",
+            value real { 201231052847194, 10, -13 }
+          }
+        },
+        segs denseg {
+          dim 2,
+          numseg 15,
+          ids {
+            local str "Query_1",
+            local str "Exophiala_spinifera_supercont1.1"
+          },
+          starts {
+            1046,
+            4731686,
+            1045,
+            -1,
+            1043,
+            4731701,
+            1042,
+            -1,
+            1039,
+            4731703,
+            -1,
+            4731706,
+            1022,
+            4731708,
+            -1,
+            4731725,
+            1017,
+            4731726,
+            1016,
+            -1,
+            968,
+            4731731,
+            -1,
+            4731779,
+            965,
+            4731780,
+            964,
+            -1,
+            582,
+            4731783
+          },
+          lens {
+            15,
+            1,
+            2,
+            1,
+            3,
+            2,
+            17,
+            1,
+            5,
+            1,
+            48,
+            1,
+            3,
+            1,
+            382
+          },
+          strands {
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus
+          }
+        }
+      },
+      {
+        type partial,
+        dim 2,
+        score {
+          {
+            id str "score",
+            value int 149
+          },
+          {
+            id str "e_value",
+            value real { 212055077258664, 10, -84 }
+          },
+          {
+            id str "bit_score",
+            value real { 276271092432061, 10, -12 }
+          },
+          {
+            id str "num_ident",
+            value int 483
+          },
+          {
+            id str "hsp_percent_coverage",
+            value real { 265139287177386, 10, -13 }
+          }
+        },
+        segs denseg {
+          dim 2,
+          numseg 33,
+          ids {
+            local str "Query_1",
+            local str "Arthrobotrys_oligospora_atcc_24927_scaffold00215"
+          },
+          starts {
+            1175,
+            2218551,
+            -1,
+            2218594,
+            1172,
+            2218595,
+            1171,
+            -1,
+            1145,
+            2218598,
+            1143,
+            -1,
+            1135,
+            2218624,
+            -1,
+            2218632,
+            1124,
+            2218634,
+            1123,
+            -1,
+            1122,
+            2218645,
+            1121,
+            -1,
+            1115,
+            2218646,
+            -1,
+            2218652,
+            1054,
+            2218654,
+            -1,
+            2218715,
+            1052,
+            2218716,
+            1051,
+            -1,
+            1022,
+            2218718,
+            -1,
+            2218747,
+            1017,
+            2218748,
+            1016,
+            -1,
+            910,
+            2218753,
+            909,
+            -1,
+            904,
+            2218859,
+            -1,
+            2218864,
+            788,
+            2218865,
+            -1,
+            2218981,
+            783,
+            2218983,
+            782,
+            -1,
+            773,
+            2218988,
+            772,
+            -1,
+            583,
+            2218997
+          },
+          lens {
+            43,
+            1,
+            3,
+            1,
+            26,
+            2,
+            8,
+            2,
+            11,
+            1,
+            1,
+            1,
+            6,
+            2,
+            61,
+            1,
+            2,
+            1,
+            29,
+            1,
+            5,
+            1,
+            106,
+            1,
+            5,
+            1,
+            116,
+            2,
+            5,
+            1,
+            9,
+            1,
+            189
+          },
+          strands {
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus
+          }
+        }
+      },
+      {
+        type partial,
+        dim 2,
+        score {
+          {
+            id str "score",
+            value int 100
+          },
+          {
+            id str "e_value",
+            value real { 36761953404758, 10, -56 }
+          },
+          {
+            id str "bit_score",
+            value real { 185785259467505, 10, -12 }
+          },
+          {
+            id str "num_ident",
+            value int 228
+          },
+          {
+            id str "hsp_percent_coverage",
+            value real { 124623105284719, 10, -13 }
+          }
+        },
+        segs denseg {
+          dim 2,
+          numseg 1,
+          ids {
+            local str "Query_1",
+            local str "Sphaerulina_musiva_so2202_SEPMUscaffold_2"
+          },
+          starts {
+            585,
+            2008135
+          },
+          lens {
+            292
+          },
+          strands {
+            minus,
+            plus
+          }
+        }
+      }
+    },
+    masks {
+      {
+        locations {
+          packed-int {
+            {
+              from 166,
+              to 172,
+              id local str "Query_1"
+            },
+            {
+              from 1298,
+              to 1306,
+              id local str "Query_1"
+            },
+            {
+              from 2383,
+              to 2417,
+              id local str "Query_1"
+            }
+          }
+        },
+        frame plus1
+      }
+    },
+    ka-blocks {
+      {
+        lambda { 133270576282382, 10, -14 },
+        k { 620991117264206, 10, -15 },
+        h { 112409184650114, 10, -14 },
+        gapped FALSE
+      },
+      {
+        lambda { 128, 10, -2 },
+        k { 46, 10, -2 },
+        h { 85, 10, -2 },
+        gapped TRUE
+      }
+    },
+    search-stats {
+      "Effective search space: 31069512015752",
+      "Effective search space used: 31069512015752",
+      "Length adjustment: 33"
+    }
+  }
+}

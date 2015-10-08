@@ -1,0 +1,10 @@
+# Create file with gene ID and tax ID for all data sets after clustering
+for file in ../3_clustering/*.ids
+do
+base=`basename $file .ids`
+echo $base
+cat $file | while read id
+do
+egrep -m 1 "^$id	" gi_taxid_prot.dmp; done; done
+done
+done

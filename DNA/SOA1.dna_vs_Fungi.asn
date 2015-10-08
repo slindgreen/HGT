@@ -1,0 +1,1128 @@
+Blast4-archive ::= {
+  request {
+    ident "2.2.30+",
+    body queue-search {
+      program "blastn",
+      service "megablast",
+      queries bioseq-set {
+        seq-set {
+          seq {
+            id {
+              local str "Query_1"
+            },
+            descr {
+              user {
+                type str "CFastaReader",
+                data {
+                  {
+                    label str "DefLine",
+                    data str ">SOA1 YIL166C SGDID:S000001428,
+ chrIX:30938..32566"
+                  }
+                }
+              },
+              title "SOA1 YIL166C SGDID:S000001428, chrIX:30938..32566"
+            },
+            inst {
+              repr raw,
+              mol na,
+              length 1629,
+              seq-data ncbi2na '3B5B100208318CFB200A543CDEED64809F04D23DA22CFD
+13054FE18FF4C09226FA200B738352EBCE0A7EDC0F635E2FC4E840A38A0080FAC2003A1F823FFF
+BABFF3CEFE5FFE8FC30A0033E42A4BF4841F4FBE1F8038118187105FA501EFCDCBCCFDC90B81C5
+690DE7B5008FEB5202AD3D6BD03EEFBA2EC3FB3C7427ADE00362B43F3E71C8E7CF283AC4A9ABD3
+568433DCC7ED33CF31E89E2744F5970BF7FEBB9CC5DFF503FCA777FC9F5A0D32238AACF4C1F27A
+7A4B173F30F82AFDED5FDEFA6E935FF3F0E6C8A171901EB8B793F440A00DBCF478B38A200F3AF0
+483FC2A3854D02AE138B058414BC5F4288FFB11DC120FE373A53EFCD42B3C493D3377D012FAF5C
+FCDFE33C08BF03C7713F7F604FF243D4A5095E79C303F14F2691CF366C0F80800D1FEEEA0F941B
+FAB9D5FD32FDDEB67F161E110157A342CCCF1C16B31FADF573113D4F7E7AFAB7588FD03DAC2366
+C4BA9126F310CE2E542FA2434F9F704ECC80E38C05F1CC722B04031F728F47E7D04FECE9EF9C70
+BFC733CB2830310A1640E81DCE10082248D0F1FA11070230A83826DF8F32BF3D1C80'H
+            }
+          }
+        }
+      },
+      subject database "/home/databases/ENSEMBL/fungi_v28/blastdb/Ensembl_Fung
+i_genomes_sensu_stricto",
+      algorithm-options {
+        {
+          name "EvalueThreshold",
+          value cutoff e-value { 1, 10, 1 }
+        },
+        {
+          name "MaskAtHash",
+          value boolean TRUE
+        },
+        {
+          name "DustFilteringLevel",
+          value integer 20
+        },
+        {
+          name "DustFilteringWindow",
+          value integer 64
+        },
+        {
+          name "DustFilteringLinker",
+          value integer 1
+        },
+        {
+          name "UngappedMode",
+          value boolean FALSE
+        },
+        {
+          name "HitlistSize",
+          value integer 500
+        },
+        {
+          name "EffectiveSearchSpace",
+          value big-integer 20592583545324
+        }
+      },
+      program-options {
+        {
+          name "LCaseMask",
+          value query-mask {
+            locations {
+              packed-int {
+                {
+                  from 241,
+                  to 280,
+                  id local str "Query_1"
+                },
+                {
+                  from 241,
+                  to 280,
+                  id local str "Query_1"
+                }
+              }
+            },
+            frame plus1
+          }
+        }
+      }
+    }
+  },
+  results {
+    alignments {
+      {
+        type partial,
+        dim 2,
+        score {
+          {
+            id str "score",
+            value int 1629
+          },
+          {
+            id str "e_value",
+            value real { 0, 10, 0 }
+          },
+          {
+            id str "bit_score",
+            value real { 300931257789211, 10, -11 }
+          },
+          {
+            id str "num_ident",
+            value int 1629
+          },
+          {
+            id str "hsp_percent_coverage",
+            value real { 1, 10, 2 }
+          }
+        },
+        segs denseg {
+          dim 2,
+          numseg 1,
+          ids {
+            local str "Query_1",
+            local str "Saccharomyces_cerevisiae_R64-1-1_IX"
+          },
+          starts {
+            0,
+            30937
+          },
+          lens {
+            1629
+          },
+          strands {
+            minus,
+            plus
+          }
+        }
+      },
+      {
+        type partial,
+        dim 2,
+        score {
+          {
+            id str "score",
+            value int 1629
+          },
+          {
+            id str "e_value",
+            value real { 0, 10, 0 }
+          },
+          {
+            id str "bit_score",
+            value real { 300931257789211, 10, -11 }
+          },
+          {
+            id str "num_ident",
+            value int 1629
+          },
+          {
+            id str "hsp_percent_coverage",
+            value real { 1, 10, 2 }
+          }
+        },
+        segs denseg {
+          dim 2,
+          numseg 1,
+          ids {
+            local str "Query_1",
+            local str "Saccharomyces_cerevisiae_cen_pk113_7d_IX"
+          },
+          starts {
+            0,
+            22643
+          },
+          lens {
+            1629
+          },
+          strands {
+            minus,
+            plus
+          }
+        }
+      },
+      {
+        type partial,
+        dim 2,
+        score {
+          {
+            id str "score",
+            value int 1617
+          },
+          {
+            id str "e_value",
+            value real { 0, 10, 0 }
+          },
+          {
+            id str "bit_score",
+            value real { 298715278206406, 10, -11 }
+          },
+          {
+            id str "num_ident",
+            value int 1625
+          },
+          {
+            id str "hsp_percent_coverage",
+            value real { 1, 10, 2 }
+          }
+        },
+        segs denseg {
+          dim 2,
+          numseg 1,
+          ids {
+            local str "Query_1",
+            local str "Saccharomyces_cerevisiae_kyokai_no_7_IX"
+          },
+          starts {
+            0,
+            35920
+          },
+          lens {
+            1629
+          },
+          strands {
+            minus,
+            plus
+          }
+        }
+      },
+      {
+        type partial,
+        dim 2,
+        score {
+          {
+            id str "score",
+            value int 1607
+          },
+          {
+            id str "e_value",
+            value real { 0, 10, 0 }
+          },
+          {
+            id str "bit_score",
+            value real { 296868628554068, 10, -11 }
+          },
+          {
+            id str "num_ident",
+            value int 1625
+          },
+          {
+            id str "hsp_percent_coverage",
+            value real { 1, 10, 2 }
+          }
+        },
+        segs denseg {
+          dim 2,
+          numseg 11,
+          ids {
+            local str "Query_1",
+            local str "Saccharomyces_cerevisiae_fosterso_AEEZ01000053"
+          },
+          starts {
+            657,
+            5112,
+            -1,
+            6084,
+            555,
+            6085,
+            -1,
+            6187,
+            457,
+            6188,
+            -1,
+            6286,
+            275,
+            6287,
+            -1,
+            6469,
+            258,
+            6470,
+            -1,
+            6487,
+            0,
+            6488
+          },
+          lens {
+            972,
+            1,
+            102,
+            1,
+            98,
+            1,
+            182,
+            1,
+            17,
+            1,
+            258
+          },
+          strands {
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus
+          }
+        }
+      },
+      {
+        type partial,
+        dim 2,
+        score {
+          {
+            id str "score",
+            value int 1605
+          },
+          {
+            id str "e_value",
+            value real { 0, 10, 0 }
+          },
+          {
+            id str "bit_score",
+            value real { 2964992986236, 10, -9 }
+          },
+          {
+            id str "num_ident",
+            value int 1621
+          },
+          {
+            id str "hsp_percent_coverage",
+            value real { 1, 10, 2 }
+          }
+        },
+        segs denseg {
+          dim 2,
+          numseg 1,
+          ids {
+            local str "Query_1",
+            local str "Saccharomyces_cerevisiae_yjm993_IX"
+          },
+          starts {
+            0,
+            5474
+          },
+          lens {
+            1629
+          },
+          strands {
+            minus,
+            plus
+          }
+        }
+      },
+      {
+        type partial,
+        dim 2,
+        score {
+          {
+            id str "score",
+            value int 1605
+          },
+          {
+            id str "e_value",
+            value real { 0, 10, 0 }
+          },
+          {
+            id str "bit_score",
+            value real { 2964992986236, 10, -9 }
+          },
+          {
+            id str "num_ident",
+            value int 1621
+          },
+          {
+            id str "hsp_percent_coverage",
+            value real { 1, 10, 2 }
+          }
+        },
+        segs denseg {
+          dim 2,
+          numseg 1,
+          ids {
+            local str "Query_1",
+            local str "Saccharomyces_cerevisiae_yjm789_AAFW02000124"
+          },
+          starts {
+            0,
+            10427
+          },
+          lens {
+            1629
+          },
+          strands {
+            minus,
+            plus
+          }
+        }
+      },
+      {
+        type partial,
+        dim 2,
+        score {
+          {
+            id str "score",
+            value int 1605
+          },
+          {
+            id str "e_value",
+            value real { 0, 10, 0 }
+          },
+          {
+            id str "bit_score",
+            value real { 2964992986236, 10, -9 }
+          },
+          {
+            id str "num_ident",
+            value int 1621
+          },
+          {
+            id str "hsp_percent_coverage",
+            value real { 1, 10, 2 }
+          }
+        },
+        segs denseg {
+          dim 2,
+          numseg 1,
+          ids {
+            local str "Query_1",
+            local str "Saccharomyces_cerevisiae_vl3_IX"
+          },
+          starts {
+            0,
+            2711
+          },
+          lens {
+            1629
+          },
+          strands {
+            minus,
+            plus
+          }
+        }
+      },
+      {
+        type partial,
+        dim 2,
+        score {
+          {
+            id str "score",
+            value int 1605
+          },
+          {
+            id str "e_value",
+            value real { 0, 10, 0 }
+          },
+          {
+            id str "bit_score",
+            value real { 2964992986236, 10, -9 }
+          },
+          {
+            id str "num_ident",
+            value int 1621
+          },
+          {
+            id str "hsp_percent_coverage",
+            value real { 1, 10, 2 }
+          }
+        },
+        segs denseg {
+          dim 2,
+          numseg 1,
+          ids {
+            local str "Query_1",
+            local str "Saccharomyces_cerevisiae_p301_IX"
+          },
+          starts {
+            0,
+            5083
+          },
+          lens {
+            1629
+          },
+          strands {
+            minus,
+            plus
+          }
+        }
+      },
+      {
+        type partial,
+        dim 2,
+        score {
+          {
+            id str "score",
+            value int 1605
+          },
+          {
+            id str "e_value",
+            value real { 0, 10, 0 }
+          },
+          {
+            id str "bit_score",
+            value real { 2964992986236, 10, -9 }
+          },
+          {
+            id str "num_ident",
+            value int 1621
+          },
+          {
+            id str "hsp_percent_coverage",
+            value real { 1, 10, 2 }
+          }
+        },
+        segs denseg {
+          dim 2,
+          numseg 1,
+          ids {
+            local str "Query_1",
+            local str "Saccharomyces_cerevisiae_p283_XIV"
+          },
+          starts {
+            0,
+            476426
+          },
+          lens {
+            1629
+          },
+          strands {
+            minus,
+            plus
+          }
+        }
+      },
+      {
+        type partial,
+        dim 2,
+        score {
+          {
+            id str "score",
+            value int 1603
+          },
+          {
+            id str "e_value",
+            value real { 0, 10, 0 }
+          },
+          {
+            id str "bit_score",
+            value real { 296129968693133, 10, -11 }
+          },
+          {
+            id str "num_ident",
+            value int 1620
+          },
+          {
+            id str "hsp_percent_coverage",
+            value real { 1, 10, 2 }
+          }
+        },
+        segs denseg {
+          dim 2,
+          numseg 7,
+          ids {
+            local str "Query_1",
+            local str "Saccharomyces_cerevisiae_fostersb_IX"
+          },
+          starts {
+            662,
+            5409,
+            -1,
+            6376,
+            240,
+            6377,
+            -1,
+            6799,
+            223,
+            6800,
+            -1,
+            6817,
+            0,
+            6818
+          },
+          lens {
+            967,
+            1,
+            422,
+            1,
+            17,
+            1,
+            223
+          },
+          strands {
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus
+          }
+        }
+      },
+      {
+        type partial,
+        dim 2,
+        score {
+          {
+            id str "score",
+            value int 1602
+          },
+          {
+            id str "e_value",
+            value real { 0, 10, 0 }
+          },
+          {
+            id str "bit_score",
+            value real { 295945303727899, 10, -11 }
+          },
+          {
+            id str "num_ident",
+            value int 1620
+          },
+          {
+            id str "hsp_percent_coverage",
+            value real { 1, 10, 2 }
+          }
+        },
+        segs denseg {
+          dim 2,
+          numseg 1,
+          ids {
+            local str "Query_1",
+            local str "Saccharomyces_cerevisiae_rm11_1a_CH408055"
+          },
+          starts {
+            0,
+            397524
+          },
+          lens {
+            1629
+          },
+          strands {
+            plus,
+            plus
+          }
+        }
+      },
+      {
+        type partial,
+        dim 2,
+        score {
+          {
+            id str "score",
+            value int 1602
+          },
+          {
+            id str "e_value",
+            value real { 0, 10, 0 }
+          },
+          {
+            id str "bit_score",
+            value real { 295945303727899, 10, -11 }
+          },
+          {
+            id str "num_ident",
+            value int 1621
+          },
+          {
+            id str "hsp_percent_coverage",
+            value real { 1, 10, 2 }
+          }
+        },
+        segs denseg {
+          dim 2,
+          numseg 3,
+          ids {
+            local str "Query_1",
+            local str "Saccharomyces_cerevisiae_awri796_IX"
+          },
+          starts {
+            275,
+            8735,
+            -1,
+            10089,
+            0,
+            10090
+          },
+          lens {
+            1354,
+            1,
+            275
+          },
+          strands {
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus
+          }
+        }
+      },
+      {
+        type partial,
+        dim 2,
+        score {
+          {
+            id str "score",
+            value int 1600
+          },
+          {
+            id str "e_value",
+            value real { 0, 10, 0 }
+          },
+          {
+            id str "bit_score",
+            value real { 295575973797431, 10, -11 }
+          },
+          {
+            id str "num_ident",
+            value int 1621
+          },
+          {
+            id str "hsp_percent_coverage",
+            value real { 1, 10, 2 }
+          }
+        },
+        segs denseg {
+          dim 2,
+          numseg 5,
+          ids {
+            local str "Query_1",
+            local str "Saccharomyces_cerevisiae_vin13_IX"
+          },
+          starts {
+            275,
+            5955,
+            -1,
+            7309,
+            248,
+            7310,
+            -1,
+            7337,
+            0,
+            7338
+          },
+          lens {
+            1354,
+            1,
+            27,
+            1,
+            248
+          },
+          strands {
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus
+          }
+        }
+      },
+      {
+        type partial,
+        dim 2,
+        score {
+          {
+            id str "score",
+            value int 1599
+          },
+          {
+            id str "e_value",
+            value real { 0, 10, 0 }
+          },
+          {
+            id str "bit_score",
+            value real { 295391308832198, 10, -11 }
+          },
+          {
+            id str "num_ident",
+            value int 1619
+          },
+          {
+            id str "hsp_percent_coverage",
+            value real { 1, 10, 2 }
+          }
+        },
+        segs denseg {
+          dim 2,
+          numseg 1,
+          ids {
+            local str "Query_1",
+            local str "Saccharomyces_cerevisiae_x_saccharomyces_kudriavzevii_v
+in7_AGVY01000030"
+          },
+          starts {
+            0,
+            6446
+          },
+          lens {
+            1629
+          },
+          strands {
+            minus,
+            plus
+          }
+        }
+      },
+      {
+        type partial,
+        dim 2,
+        score {
+          {
+            id str "score",
+            value int 1599
+          },
+          {
+            id str "e_value",
+            value real { 0, 10, 0 }
+          },
+          {
+            id str "bit_score",
+            value real { 295391308832198, 10, -11 }
+          },
+          {
+            id str "num_ident",
+            value int 1619
+          },
+          {
+            id str "hsp_percent_coverage",
+            value real { 1, 10, 2 }
+          }
+        },
+        segs denseg {
+          dim 2,
+          numseg 1,
+          ids {
+            local str "Query_1",
+            local str "Saccharomyces_cerevisiae_ec1118_IX"
+          },
+          starts {
+            0,
+            6421
+          },
+          lens {
+            1629
+          },
+          strands {
+            minus,
+            plus
+          }
+        }
+      },
+      {
+        type partial,
+        dim 2,
+        score {
+          {
+            id str "score",
+            value int 1596
+          },
+          {
+            id str "e_value",
+            value real { 0, 10, 0 }
+          },
+          {
+            id str "bit_score",
+            value real { 294837313936496, 10, -11 }
+          },
+          {
+            id str "num_ident",
+            value int 1618
+          },
+          {
+            id str "hsp_percent_coverage",
+            value real { 1, 10, 2 }
+          }
+        },
+        segs denseg {
+          dim 2,
+          numseg 3,
+          ids {
+            local str "Query_1",
+            local str "Saccharomyces_cerevisiae_lalvin_qa23_ADVV01000043"
+          },
+          starts {
+            399,
+            6468,
+            -1,
+            7698,
+            0,
+            7699
+          },
+          lens {
+            1230,
+            1,
+            399
+          },
+          strands {
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus
+          }
+        }
+      },
+      {
+        type partial,
+        dim 2,
+        score {
+          {
+            id str "score",
+            value int 1200
+          },
+          {
+            id str "e_value",
+            value real { 0, 10, 0 }
+          },
+          {
+            id str "bit_score",
+            value real { 221709987703917, 10, -11 }
+          },
+          {
+            id str "num_ident",
+            value int 1486
+          },
+          {
+            id str "hsp_percent_coverage",
+            value real { 1, 10, 2 }
+          }
+        },
+        segs denseg {
+          dim 2,
+          numseg 1,
+          ids {
+            local str "Query_1",
+            local str "Saccharomyces_paradoxus_chr9"
+          },
+          starts {
+            0,
+            11540
+          },
+          lens {
+            1629
+          },
+          strands {
+            minus,
+            plus
+          }
+        }
+      },
+      {
+        type partial,
+        dim 2,
+        score {
+          {
+            id str "score",
+            value int 1147
+          },
+          {
+            id str "e_value",
+            value real { 0, 10, 0 }
+          },
+          {
+            id str "bit_score",
+            value real { 211922744546526, 10, -11 }
+          },
+          {
+            id str "num_ident",
+            value int 1160
+          },
+          {
+            id str "hsp_percent_coverage",
+            value real { 720162676488643, 10, -13 }
+          }
+        },
+        segs denseg {
+          dim 2,
+          numseg 3,
+          ids {
+            local str "Query_1",
+            local str "Saccharomyces_cerevisiae_r103_IX"
+          },
+          starts {
+            483,
+            27140,
+            -1,
+            28286,
+            464,
+            28287
+          },
+          lens {
+            1146,
+            1,
+            19
+          },
+          strands {
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus
+          }
+        }
+      },
+      {
+        type partial,
+        dim 2,
+        score {
+          {
+            id str "score",
+            value int 368
+          },
+          {
+            id str "e_value",
+            value real { 0, 10, 0 }
+          },
+          {
+            id str "bit_score",
+            value real { 680687366294055, 10, -12 }
+          },
+          {
+            id str "num_ident",
+            value int 370
+          },
+          {
+            id str "hsp_percent_coverage",
+            value real { 232747084100675, 10, -13 }
+          }
+        },
+        segs denseg {
+          dim 2,
+          numseg 1,
+          ids {
+            local str "Query_1",
+            local str "Saccharomyces_cerevisiae_r103_IX"
+          },
+          starts {
+            0,
+            28398
+          },
+          lens {
+            371
+          },
+          strands {
+            minus,
+            plus
+          }
+        }
+      }
+    },
+    masks {
+      {
+        locations {
+          packed-int {
+            {
+              from 241,
+              to 280,
+              id local str "Query_1"
+            }
+          }
+        },
+        frame plus1
+      }
+    },
+    ka-blocks {
+      {
+        lambda { 133270576282382, 10, -14 },
+        k { 620991117264206, 10, -15 },
+        h { 112409184650114, 10, -14 },
+        gapped FALSE
+      },
+      {
+        lambda { 128, 10, -2 },
+        k { 46, 10, -2 },
+        h { 85, 10, -2 },
+        gapped TRUE
+      }
+    },
+    search-stats {
+      "Effective search space: 20592583545324",
+      "Effective search space used: 20592583545324",
+      "Length adjustment: 33"
+    }
+  }
+}

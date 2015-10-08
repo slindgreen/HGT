@@ -1,0 +1,6144 @@
+Blast4-archive ::= {
+  request {
+    ident "2.2.30+",
+    body queue-search {
+      program "blastn",
+      service "megablast",
+      queries bioseq-set {
+        seq-set {
+          seq {
+            id {
+              local str "Query_1"
+            },
+            descr {
+              user {
+                type str "CFastaReader",
+                data {
+                  {
+                    label str "DefLine",
+                    data str ">SOA1 YIL166C SGDID:S000001428,
+ chrIX:30938..32566"
+                  }
+                }
+              },
+              title "SOA1 YIL166C SGDID:S000001428, chrIX:30938..32566"
+            },
+            inst {
+              repr raw,
+              mol na,
+              length 1629,
+              seq-data ncbi2na '3B5B100208318CFB200A543CDEED64809F04D23DA22CFD
+13054FE18FF4C09226FA200B738352EBCE0A7EDC0F635E2FC4E840A38A0080FAC2003A1F823FFF
+BABFF3CEFE5FFE8FC30A0033E42A4BF4841F4FBE1F8038118187105FA501EFCDCBCCFDC90B81C5
+690DE7B5008FEB5202AD3D6BD03EEFBA2EC3FB3C7427ADE00362B43F3E71C8E7CF283AC4A9ABD3
+568433DCC7ED33CF31E89E2744F5970BF7FEBB9CC5DFF503FCA777FC9F5A0D32238AACF4C1F27A
+7A4B173F30F82AFDED5FDEFA6E935FF3F0E6C8A171901EB8B793F440A00DBCF478B38A200F3AF0
+483FC2A3854D02AE138B058414BC5F4288FFB11DC120FE373A53EFCD42B3C493D3377D012FAF5C
+FCDFE33C08BF03C7713F7F604FF243D4A5095E79C303F14F2691CF366C0F80800D1FEEEA0F941B
+FAB9D5FD32FDDEB67F161E110157A342CCCF1C16B31FADF573113D4F7E7AFAB7588FD03DAC2366
+C4BA9126F310CE2E542FA2434F9F704ECC80E38C05F1CC722B04031F728F47E7D04FECE9EF9C70
+BFC733CB2830310A1640E81DCE10082248D0F1FA11070230A83826DF8F32BF3D1C80'H
+            }
+          }
+        }
+      },
+      subject database "/home/databases/ENSEMBL/fungi_v28/blastdb/Ensembl_Fung
+i_genomes_sensu_stricto",
+      algorithm-options {
+        {
+          name "MBTemplateType",
+          value integer 0
+        },
+        {
+          name "MBTemplateLength",
+          value integer 18
+        },
+        {
+          name "WordSize",
+          value integer 11
+        },
+        {
+          name "WindowSize",
+          value integer 40
+        },
+        {
+          name "EvalueThreshold",
+          value cutoff e-value { 1, 10, 1 }
+        },
+        {
+          name "MaskAtHash",
+          value boolean TRUE
+        },
+        {
+          name "DustFilteringLevel",
+          value integer 20
+        },
+        {
+          name "DustFilteringWindow",
+          value integer 64
+        },
+        {
+          name "DustFilteringLinker",
+          value integer 1
+        },
+        {
+          name "UngappedMode",
+          value boolean FALSE
+        },
+        {
+          name "HitlistSize",
+          value integer 500
+        },
+        {
+          name "EffectiveSearchSpace",
+          value big-integer 20551910370336
+        }
+      },
+      program-options {
+        {
+          name "LCaseMask",
+          value query-mask {
+            locations {
+              packed-int {
+                {
+                  from 241,
+                  to 280,
+                  id local str "Query_1"
+                },
+                {
+                  from 241,
+                  to 280,
+                  id local str "Query_1"
+                }
+              }
+            },
+            frame plus1
+          }
+        }
+      }
+    }
+  },
+  results {
+    alignments {
+      {
+        type partial,
+        dim 2,
+        score {
+          {
+            id str "score",
+            value int 3258
+          },
+          {
+            id str "e_value",
+            value real { 0, 10, 0 }
+          },
+          {
+            id str "bit_score",
+            value real { 293897408119531, 10, -11 }
+          },
+          {
+            id str "num_ident",
+            value int 1629
+          },
+          {
+            id str "hsp_percent_coverage",
+            value real { 1, 10, 2 }
+          }
+        },
+        segs denseg {
+          dim 2,
+          numseg 1,
+          ids {
+            local str "Query_1",
+            local str "Saccharomyces_cerevisiae_R64-1-1_IX"
+          },
+          starts {
+            0,
+            30937
+          },
+          lens {
+            1629
+          },
+          strands {
+            minus,
+            plus
+          }
+        }
+      },
+      {
+        type partial,
+        dim 2,
+        score {
+          {
+            id str "score",
+            value int 3258
+          },
+          {
+            id str "e_value",
+            value real { 0, 10, 0 }
+          },
+          {
+            id str "bit_score",
+            value real { 293897408119531, 10, -11 }
+          },
+          {
+            id str "num_ident",
+            value int 1629
+          },
+          {
+            id str "hsp_percent_coverage",
+            value real { 1, 10, 2 }
+          }
+        },
+        segs denseg {
+          dim 2,
+          numseg 1,
+          ids {
+            local str "Query_1",
+            local str "Saccharomyces_cerevisiae_cen_pk113_7d_IX"
+          },
+          starts {
+            0,
+            22643
+          },
+          lens {
+            1629
+          },
+          strands {
+            minus,
+            plus
+          }
+        }
+      },
+      {
+        type partial,
+        dim 2,
+        score {
+          {
+            id str "score",
+            value int 3238
+          },
+          {
+            id str "e_value",
+            value real { 0, 10, 0 }
+          },
+          {
+            id str "bit_score",
+            value real { 29209403931842, 10, -10 }
+          },
+          {
+            id str "num_ident",
+            value int 1625
+          },
+          {
+            id str "hsp_percent_coverage",
+            value real { 1, 10, 2 }
+          }
+        },
+        segs denseg {
+          dim 2,
+          numseg 1,
+          ids {
+            local str "Query_1",
+            local str "Saccharomyces_cerevisiae_kyokai_no_7_IX"
+          },
+          starts {
+            0,
+            35920
+          },
+          lens {
+            1629
+          },
+          strands {
+            minus,
+            plus
+          }
+        }
+      },
+      {
+        type partial,
+        dim 2,
+        score {
+          {
+            id str "score",
+            value int 3218
+          },
+          {
+            id str "e_value",
+            value real { 0, 10, 0 }
+          },
+          {
+            id str "bit_score",
+            value real { 290290670517308, 10, -11 }
+          },
+          {
+            id str "num_ident",
+            value int 1621
+          },
+          {
+            id str "hsp_percent_coverage",
+            value real { 1, 10, 2 }
+          }
+        },
+        segs denseg {
+          dim 2,
+          numseg 1,
+          ids {
+            local str "Query_1",
+            local str "Saccharomyces_cerevisiae_yjm993_IX"
+          },
+          starts {
+            0,
+            5474
+          },
+          lens {
+            1629
+          },
+          strands {
+            minus,
+            plus
+          }
+        }
+      },
+      {
+        type partial,
+        dim 2,
+        score {
+          {
+            id str "score",
+            value int 3218
+          },
+          {
+            id str "e_value",
+            value real { 0, 10, 0 }
+          },
+          {
+            id str "bit_score",
+            value real { 290290670517308, 10, -11 }
+          },
+          {
+            id str "num_ident",
+            value int 1621
+          },
+          {
+            id str "hsp_percent_coverage",
+            value real { 1, 10, 2 }
+          }
+        },
+        segs denseg {
+          dim 2,
+          numseg 1,
+          ids {
+            local str "Query_1",
+            local str "Saccharomyces_cerevisiae_yjm789_AAFW02000124"
+          },
+          starts {
+            0,
+            10427
+          },
+          lens {
+            1629
+          },
+          strands {
+            minus,
+            plus
+          }
+        }
+      },
+      {
+        type partial,
+        dim 2,
+        score {
+          {
+            id str "score",
+            value int 3218
+          },
+          {
+            id str "e_value",
+            value real { 0, 10, 0 }
+          },
+          {
+            id str "bit_score",
+            value real { 290290670517308, 10, -11 }
+          },
+          {
+            id str "num_ident",
+            value int 1621
+          },
+          {
+            id str "hsp_percent_coverage",
+            value real { 1, 10, 2 }
+          }
+        },
+        segs denseg {
+          dim 2,
+          numseg 1,
+          ids {
+            local str "Query_1",
+            local str "Saccharomyces_cerevisiae_vl3_IX"
+          },
+          starts {
+            0,
+            2711
+          },
+          lens {
+            1629
+          },
+          strands {
+            minus,
+            plus
+          }
+        }
+      },
+      {
+        type partial,
+        dim 2,
+        score {
+          {
+            id str "score",
+            value int 3218
+          },
+          {
+            id str "e_value",
+            value real { 0, 10, 0 }
+          },
+          {
+            id str "bit_score",
+            value real { 290290670517308, 10, -11 }
+          },
+          {
+            id str "num_ident",
+            value int 1621
+          },
+          {
+            id str "hsp_percent_coverage",
+            value real { 1, 10, 2 }
+          }
+        },
+        segs denseg {
+          dim 2,
+          numseg 1,
+          ids {
+            local str "Query_1",
+            local str "Saccharomyces_cerevisiae_p301_IX"
+          },
+          starts {
+            0,
+            5083
+          },
+          lens {
+            1629
+          },
+          strands {
+            minus,
+            plus
+          }
+        }
+      },
+      {
+        type partial,
+        dim 2,
+        score {
+          {
+            id str "score",
+            value int 3218
+          },
+          {
+            id str "e_value",
+            value real { 0, 10, 0 }
+          },
+          {
+            id str "bit_score",
+            value real { 290290670517308, 10, -11 }
+          },
+          {
+            id str "num_ident",
+            value int 1621
+          },
+          {
+            id str "hsp_percent_coverage",
+            value real { 1, 10, 2 }
+          }
+        },
+        segs denseg {
+          dim 2,
+          numseg 1,
+          ids {
+            local str "Query_1",
+            local str "Saccharomyces_cerevisiae_p283_XIV"
+          },
+          starts {
+            0,
+            476426
+          },
+          lens {
+            1629
+          },
+          strands {
+            minus,
+            plus
+          }
+        }
+      },
+      {
+        type partial,
+        dim 2,
+        score {
+          {
+            id str "score",
+            value int 3212
+          },
+          {
+            id str "e_value",
+            value real { 0, 10, 0 }
+          },
+          {
+            id str "bit_score",
+            value real { 289749659876975, 10, -11 }
+          },
+          {
+            id str "num_ident",
+            value int 1620
+          },
+          {
+            id str "hsp_percent_coverage",
+            value real { 1, 10, 2 }
+          }
+        },
+        segs denseg {
+          dim 2,
+          numseg 1,
+          ids {
+            local str "Query_1",
+            local str "Saccharomyces_cerevisiae_rm11_1a_CH408055"
+          },
+          starts {
+            0,
+            397524
+          },
+          lens {
+            1629
+          },
+          strands {
+            plus,
+            plus
+          }
+        }
+      },
+      {
+        type partial,
+        dim 2,
+        score {
+          {
+            id str "score",
+            value int 3210
+          },
+          {
+            id str "e_value",
+            value real { 0, 10, 0 }
+          },
+          {
+            id str "bit_score",
+            value real { 289569322996864, 10, -11 }
+          },
+          {
+            id str "num_ident",
+            value int 1620
+          },
+          {
+            id str "hsp_percent_coverage",
+            value real { 1, 10, 2 }
+          }
+        },
+        segs denseg {
+          dim 2,
+          numseg 7,
+          ids {
+            local str "Query_1",
+            local str "Saccharomyces_cerevisiae_fostersb_IX"
+          },
+          starts {
+            662,
+            5409,
+            -1,
+            6376,
+            241,
+            6377,
+            -1,
+            6798,
+            223,
+            6799,
+            -1,
+            6817,
+            0,
+            6818
+          },
+          lens {
+            967,
+            1,
+            421,
+            1,
+            18,
+            1,
+            223
+          },
+          strands {
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus
+          }
+        }
+      },
+      {
+        type partial,
+        dim 2,
+        score {
+          {
+            id str "score",
+            value int 3210
+          },
+          {
+            id str "e_value",
+            value real { 0, 10, 0 }
+          },
+          {
+            id str "bit_score",
+            value real { 289569322996864, 10, -11 }
+          },
+          {
+            id str "num_ident",
+            value int 1621
+          },
+          {
+            id str "hsp_percent_coverage",
+            value real { 1, 10, 2 }
+          }
+        },
+        segs denseg {
+          dim 2,
+          numseg 3,
+          ids {
+            local str "Query_1",
+            local str "Saccharomyces_cerevisiae_awri796_IX"
+          },
+          starts {
+            275,
+            8735,
+            -1,
+            10089,
+            0,
+            10090
+          },
+          lens {
+            1354,
+            1,
+            275
+          },
+          strands {
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus
+          }
+        }
+      },
+      {
+        type partial,
+        dim 2,
+        score {
+          {
+            id str "score",
+            value int 3208
+          },
+          {
+            id str "e_value",
+            value real { 0, 10, 0 }
+          },
+          {
+            id str "bit_score",
+            value real { 289388986116753, 10, -11 }
+          },
+          {
+            id str "num_ident",
+            value int 1619
+          },
+          {
+            id str "hsp_percent_coverage",
+            value real { 1, 10, 2 }
+          }
+        },
+        segs denseg {
+          dim 2,
+          numseg 1,
+          ids {
+            local str "Query_1",
+            local str "Saccharomyces_cerevisiae_x_saccharomyces_kudriavzevii_v
+in7_AGVY01000030"
+          },
+          starts {
+            0,
+            6446
+          },
+          lens {
+            1629
+          },
+          strands {
+            minus,
+            plus
+          }
+        }
+      },
+      {
+        type partial,
+        dim 2,
+        score {
+          {
+            id str "score",
+            value int 3208
+          },
+          {
+            id str "e_value",
+            value real { 0, 10, 0 }
+          },
+          {
+            id str "bit_score",
+            value real { 289388986116753, 10, -11 }
+          },
+          {
+            id str "num_ident",
+            value int 1625
+          },
+          {
+            id str "hsp_percent_coverage",
+            value real { 1, 10, 2 }
+          }
+        },
+        segs denseg {
+          dim 2,
+          numseg 11,
+          ids {
+            local str "Query_1",
+            local str "Saccharomyces_cerevisiae_fosterso_AEEZ01000053"
+          },
+          starts {
+            657,
+            5112,
+            -1,
+            6084,
+            555,
+            6085,
+            -1,
+            6187,
+            457,
+            6188,
+            -1,
+            6286,
+            275,
+            6287,
+            -1,
+            6469,
+            258,
+            6470,
+            -1,
+            6487,
+            0,
+            6488
+          },
+          lens {
+            972,
+            1,
+            102,
+            1,
+            98,
+            1,
+            182,
+            1,
+            17,
+            1,
+            258
+          },
+          strands {
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus
+          }
+        }
+      },
+      {
+        type partial,
+        dim 2,
+        score {
+          {
+            id str "score",
+            value int 3208
+          },
+          {
+            id str "e_value",
+            value real { 0, 10, 0 }
+          },
+          {
+            id str "bit_score",
+            value real { 289388986116753, 10, -11 }
+          },
+          {
+            id str "num_ident",
+            value int 1619
+          },
+          {
+            id str "hsp_percent_coverage",
+            value real { 1, 10, 2 }
+          }
+        },
+        segs denseg {
+          dim 2,
+          numseg 1,
+          ids {
+            local str "Query_1",
+            local str "Saccharomyces_cerevisiae_ec1118_IX"
+          },
+          starts {
+            0,
+            6421
+          },
+          lens {
+            1629
+          },
+          strands {
+            minus,
+            plus
+          }
+        }
+      },
+      {
+        type partial,
+        dim 2,
+        score {
+          {
+            id str "score",
+            value int 3204
+          },
+          {
+            id str "e_value",
+            value real { 0, 10, 0 }
+          },
+          {
+            id str "bit_score",
+            value real { 289028312356531, 10, -11 }
+          },
+          {
+            id str "num_ident",
+            value int 1621
+          },
+          {
+            id str "hsp_percent_coverage",
+            value real { 1, 10, 2 }
+          }
+        },
+        segs denseg {
+          dim 2,
+          numseg 5,
+          ids {
+            local str "Query_1",
+            local str "Saccharomyces_cerevisiae_vin13_IX"
+          },
+          starts {
+            275,
+            5955,
+            -1,
+            7309,
+            248,
+            7310,
+            -1,
+            7337,
+            0,
+            7338
+          },
+          lens {
+            1354,
+            1,
+            27,
+            1,
+            248
+          },
+          strands {
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus
+          }
+        }
+      },
+      {
+        type partial,
+        dim 2,
+        score {
+          {
+            id str "score",
+            value int 3202
+          },
+          {
+            id str "e_value",
+            value real { 0, 10, 0 }
+          },
+          {
+            id str "bit_score",
+            value real { 288847975476419, 10, -11 }
+          },
+          {
+            id str "num_ident",
+            value int 1618
+          },
+          {
+            id str "hsp_percent_coverage",
+            value real { 1, 10, 2 }
+          }
+        },
+        segs denseg {
+          dim 2,
+          numseg 3,
+          ids {
+            local str "Query_1",
+            local str "Saccharomyces_cerevisiae_lalvin_qa23_ADVV01000043"
+          },
+          starts {
+            399,
+            6468,
+            -1,
+            7698,
+            0,
+            7699
+          },
+          lens {
+            1230,
+            1,
+            399
+          },
+          strands {
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus
+          }
+        }
+      },
+      {
+        type partial,
+        dim 2,
+        score {
+          {
+            id str "score",
+            value int 2542
+          },
+          {
+            id str "e_value",
+            value real { 0, 10, 0 }
+          },
+          {
+            id str "bit_score",
+            value real { 22933680503975, 10, -10 }
+          },
+          {
+            id str "num_ident",
+            value int 1486
+          },
+          {
+            id str "hsp_percent_coverage",
+            value real { 1, 10, 2 }
+          }
+        },
+        segs denseg {
+          dim 2,
+          numseg 1,
+          ids {
+            local str "Query_1",
+            local str "Saccharomyces_paradoxus_chr9"
+          },
+          starts {
+            0,
+            11540
+          },
+          lens {
+            1629
+          },
+          strands {
+            minus,
+            plus
+          }
+        }
+      },
+      {
+        type partial,
+        dim 2,
+        score {
+          {
+            id str "score",
+            value int 2298
+          },
+          {
+            id str "e_value",
+            value real { 0, 10, 0 }
+          },
+          {
+            id str "bit_score",
+            value real { 207335705666193, 10, -11 }
+          },
+          {
+            id str "num_ident",
+            value int 1160
+          },
+          {
+            id str "hsp_percent_coverage",
+            value real { 720162676488643, 10, -13 }
+          }
+        },
+        segs denseg {
+          dim 2,
+          numseg 3,
+          ids {
+            local str "Query_1",
+            local str "Saccharomyces_cerevisiae_r103_IX"
+          },
+          starts {
+            483,
+            27140,
+            -1,
+            28286,
+            464,
+            28287
+          },
+          lens {
+            1146,
+            1,
+            19
+          },
+          strands {
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus
+          }
+        }
+      },
+      {
+        type partial,
+        dim 2,
+        score {
+          {
+            id str "score",
+            value int 736
+          },
+          {
+            id str "e_value",
+            value real { 0, 10, 0 }
+          },
+          {
+            id str "bit_score",
+            value real { 66492602299408, 10, -11 }
+          },
+          {
+            id str "num_ident",
+            value int 370
+          },
+          {
+            id str "hsp_percent_coverage",
+            value real { 232747084100675, 10, -13 }
+          }
+        },
+        segs denseg {
+          dim 2,
+          numseg 1,
+          ids {
+            local str "Query_1",
+            local str "Saccharomyces_cerevisiae_r103_IX"
+          },
+          starts {
+            0,
+            28398
+          },
+          lens {
+            371
+          },
+          strands {
+            minus,
+            plus
+          }
+        }
+      },
+      {
+        type partial,
+        dim 2,
+        score {
+          {
+            id str "score",
+            value int 2010
+          },
+          {
+            id str "e_value",
+            value real { 0, 10, 0 }
+          },
+          {
+            id str "bit_score",
+            value real { 181367194930192, 10, -11 }
+          },
+          {
+            id str "num_ident",
+            value int 1379
+          },
+          {
+            id str "hsp_percent_coverage",
+            value real { 99938612645795, 10, -12 }
+          }
+        },
+        segs denseg {
+          dim 2,
+          numseg 1,
+          ids {
+            local str "Query_1",
+            local str "Saccharomyces_mikatae.IFO_1815_T_chr9"
+          },
+          starts {
+            0,
+            8971
+          },
+          lens {
+            1628
+          },
+          strands {
+            minus,
+            plus
+          }
+        }
+      },
+      {
+        type partial,
+        dim 2,
+        score {
+          {
+            id str "score",
+            value int 1908
+          },
+          {
+            id str "e_value",
+            value real { 0, 10, 0 }
+          },
+          {
+            id str "bit_score",
+            value real { 172170014044525, 10, -11 }
+          },
+          {
+            id str "num_ident",
+            value int 1359
+          },
+          {
+            id str "hsp_percent_coverage",
+            value real { 1, 10, 2 }
+          }
+        },
+        segs denseg {
+          dim 2,
+          numseg 1,
+          ids {
+            local str "Query_1",
+            local str "Saccharomyces_kudriavzevii.ZP_591_chr9"
+          },
+          starts {
+            0,
+            7880
+          },
+          lens {
+            1629
+          },
+          strands {
+            minus,
+            plus
+          }
+        }
+      },
+      {
+        type partial,
+        dim 2,
+        score {
+          {
+            id str "score",
+            value int 1884
+          },
+          {
+            id str "e_value",
+            value real { 0, 10, 0 }
+          },
+          {
+            id str "bit_score",
+            value real { 170005971483191, 10, -11 }
+          },
+          {
+            id str "num_ident",
+            value int 1355
+          },
+          {
+            id str "hsp_percent_coverage",
+            value real { 1, 10, 2 }
+          }
+        },
+        segs denseg {
+          dim 2,
+          numseg 3,
+          ids {
+            local str "Query_1",
+            local str "Saccharomyces_cerevisiae_x_saccharomyces_kudriavzevii_v
+in7_AGVY01000249"
+          },
+          starts {
+            275,
+            10421,
+            274,
+            -1,
+            0,
+            11775
+          },
+          lens {
+            1354,
+            1,
+            274
+          },
+          strands {
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus
+          }
+        }
+      },
+      {
+        type partial,
+        dim 2,
+        score {
+          {
+            id str "score",
+            value int 1878
+          },
+          {
+            id str "e_value",
+            value real { 0, 10, 0 }
+          },
+          {
+            id str "bit_score",
+            value real { 169464960842858, 10, -11 }
+          },
+          {
+            id str "num_ident",
+            value int 1353
+          },
+          {
+            id str "hsp_percent_coverage",
+            value real { 1, 10, 2 }
+          }
+        },
+        segs denseg {
+          dim 2,
+          numseg 1,
+          ids {
+            local str "Query_1",
+            local str "Saccharomyces_kudriavzevii.IFO_1802_T_chr9"
+          },
+          starts {
+            0,
+            7790
+          },
+          lens {
+            1629
+          },
+          strands {
+            minus,
+            plus
+          }
+        }
+      },
+      {
+        type partial,
+        dim 2,
+        score {
+          {
+            id str "score",
+            value int 1878
+          },
+          {
+            id str "e_value",
+            value real { 0, 10, 0 }
+          },
+          {
+            id str "bit_score",
+            value real { 169464960842858, 10, -11 }
+          },
+          {
+            id str "num_ident",
+            value int 1353
+          },
+          {
+            id str "hsp_percent_coverage",
+            value real { 1, 10, 2 }
+          }
+        },
+        segs denseg {
+          dim 2,
+          numseg 1,
+          ids {
+            local str "Query_1",
+            local str "Saccharomyces_kudriavzevii_ifo_1802_c1969"
+          },
+          starts {
+            0,
+            5727
+          },
+          lens {
+            1629
+          },
+          strands {
+            minus,
+            plus
+          }
+        }
+      },
+      {
+        type partial,
+        dim 2,
+        score {
+          {
+            id str "score",
+            value int 1726
+          },
+          {
+            id str "e_value",
+            value real { 0, 10, 0 }
+          },
+          {
+            id str "bit_score",
+            value real { 155759357954413, 10, -11 }
+          },
+          {
+            id str "num_ident",
+            value int 1322
+          },
+          {
+            id str "hsp_percent_coverage",
+            value real { 99938612645795, 10, -12 }
+          }
+        },
+        segs denseg {
+          dim 2,
+          numseg 1,
+          ids {
+            local str "Query_1",
+            local str "Saccharomyces_bayanus_var._uvarum.CBS_7001_chr9"
+          },
+          starts {
+            0,
+            20639
+          },
+          lens {
+            1628
+          },
+          strands {
+            minus,
+            plus
+          }
+        }
+      },
+      {
+        type partial,
+        dim 2,
+        score {
+          {
+            id str "score",
+            value int 1692
+          },
+          {
+            id str "e_value",
+            value real { 0, 10, 0 }
+          },
+          {
+            id str "bit_score",
+            value real { 152693630992524, 10, -11 }
+          },
+          {
+            id str "num_ident",
+            value int 1316
+          },
+          {
+            id str "hsp_percent_coverage",
+            value real { 1, 10, 2 }
+          }
+        },
+        segs denseg {
+          dim 2,
+          numseg 1,
+          ids {
+            local str "Query_1",
+            local str "Saccharomyces_arboricola_h_6_II"
+          },
+          starts {
+            0,
+            2172
+          },
+          lens {
+            1629
+          },
+          strands {
+            minus,
+            plus
+          }
+        }
+      },
+      {
+        type partial,
+        dim 2,
+        score {
+          {
+            id str "score",
+            value int 200
+          },
+          {
+            id str "e_value",
+            value real { 435337236504307, 10, -56 }
+          },
+          {
+            id str "bit_score",
+            value real { 181623184296277, 10, -12 }
+          },
+          {
+            id str "num_ident",
+            value int 615
+          },
+          {
+            id str "hsp_percent_coverage",
+            value real { 580199508901166, 10, -13 }
+          }
+        },
+        segs denseg {
+          dim 2,
+          numseg 23,
+          ids {
+            local str "Query_1",
+            local str "Candida_tenuis_atcc_10573_CANTEscaffold_00015"
+          },
+          starts {
+            192,
+            482388,
+            -1,
+            482724,
+            528,
+            482725,
+            536,
+            -1,
+            537,
+            482733,
+            -1,
+            482792,
+            596,
+            482793,
+            600,
+            -1,
+            601,
+            482797,
+            607,
+            -1,
+            612,
+            482803,
+            -1,
+            482816,
+            625,
+            482821,
+            806,
+            -1,
+            809,
+            483002,
+            933,
+            -1,
+            934,
+            483126,
+            -1,
+            483139,
+            947,
+            483140,
+            1047,
+            -1,
+            1051,
+            483240,
+            -1,
+            483245,
+            1056,
+            483249
+          },
+          lens {
+            336,
+            1,
+            8,
+            1,
+            59,
+            1,
+            4,
+            1,
+            6,
+            5,
+            13,
+            5,
+            181,
+            3,
+            124,
+            1,
+            13,
+            1,
+            100,
+            4,
+            5,
+            4,
+            73
+          },
+          strands {
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus
+          }
+        }
+      },
+      {
+        type partial,
+        dim 2,
+        score {
+          {
+            id str "score",
+            value int 158
+          },
+          {
+            id str "e_value",
+            value real { 109409734970702, 10, -44 }
+          },
+          {
+            id str "bit_score",
+            value real { 143752439472942, 10, -12 }
+          },
+          {
+            id str "num_ident",
+            value int 494
+          },
+          {
+            id str "hsp_percent_coverage",
+            value real { 468474524248005, 10, -13 }
+          }
+        },
+        segs denseg {
+          dim 2,
+          numseg 19,
+          ids {
+            local str "Query_1",
+            local str "Brettanomyces_bruxellensis_awri1499_AWRI1499_contig584_
+scaffold6"
+          },
+          starts {
+            829,
+            69899,
+            -1,
+            69999,
+            813,
+            70001,
+            812,
+            -1,
+            810,
+            70017,
+            809,
+            -1,
+            531,
+            70019,
+            -1,
+            70297,
+            528,
+            70298,
+            527,
+            -1,
+            509,
+            70301,
+            508,
+            -1,
+            502,
+            70319,
+            -1,
+            70325,
+            216,
+            70326,
+            213,
+            -1,
+            196,
+            70612,
+            -1,
+            70629,
+            174,
+            70632
+          },
+          lens {
+            100,
+            2,
+            16,
+            1,
+            2,
+            1,
+            278,
+            1,
+            3,
+            1,
+            18,
+            1,
+            6,
+            1,
+            286,
+            3,
+            17,
+            3,
+            22
+          },
+          strands {
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus
+          }
+        }
+      },
+      {
+        type partial,
+        dim 2,
+        score {
+          {
+            id str "score",
+            value int 152
+          },
+          {
+            id str "e_value",
+            value real { 465222031229438, 10, -43 }
+          },
+          {
+            id str "bit_score",
+            value real { 138342333069608, 10, -12 }
+          },
+          {
+            id str "num_ident",
+            value int 661
+          },
+          {
+            id str "hsp_percent_coverage",
+            value real { 634834254143646, 10, -13 }
+          }
+        },
+        segs denseg {
+          dim 2,
+          numseg 25,
+          ids {
+            local str "Query_1",
+            local str "Komagataella_pastoris_cbs_7435_3"
+          },
+          starts {
+            546,
+            2180558,
+            806,
+            -1,
+            807,
+            2180818,
+            824,
+            -1,
+            825,
+            2180835,
+            -1,
+            2180847,
+            837,
+            2180849,
+            -1,
+            2180963,
+            951,
+            2180966,
+            1043,
+            -1,
+            1046,
+            2181058,
+            -1,
+            2181063,
+            1051,
+            2181066,
+            -1,
+            2181143,
+            1128,
+            2181145,
+            1141,
+            -1,
+            1143,
+            2181158,
+            1217,
+            -1,
+            1218,
+            2181232,
+            -1,
+            2181244,
+            1230,
+            2181245,
+            1472,
+            -1,
+            1473,
+            2181487,
+            -1,
+            2181494,
+            1480,
+            2181495
+          },
+          lens {
+            260,
+            1,
+            17,
+            1,
+            12,
+            2,
+            114,
+            3,
+            92,
+            3,
+            5,
+            3,
+            77,
+            2,
+            13,
+            2,
+            74,
+            1,
+            12,
+            1,
+            242,
+            1,
+            7,
+            1,
+            92
+          },
+          strands {
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus
+          }
+        }
+      },
+      {
+        type partial,
+        dim 2,
+        score {
+          {
+            id str "score",
+            value int 152
+          },
+          {
+            id str "e_value",
+            value real { 465222031229438, 10, -43 }
+          },
+          {
+            id str "bit_score",
+            value real { 138342333069608, 10, -12 }
+          },
+          {
+            id str "num_ident",
+            value int 661
+          },
+          {
+            id str "hsp_percent_coverage",
+            value real { 634834254143646, 10, -13 }
+          }
+        },
+        segs denseg {
+          dim 2,
+          numseg 25,
+          ids {
+            local str "Query_1",
+            local str "Komagataella_pastoris_3"
+          },
+          starts {
+            1480,
+            63985,
+            -1,
+            64077,
+            1473,
+            64078,
+            1472,
+            -1,
+            1230,
+            64085,
+            -1,
+            64327,
+            1218,
+            64328,
+            1217,
+            -1,
+            1143,
+            64340,
+            1141,
+            -1,
+            1128,
+            64414,
+            -1,
+            64427,
+            1051,
+            64429,
+            -1,
+            64506,
+            1046,
+            64509,
+            1043,
+            -1,
+            951,
+            64514,
+            -1,
+            64606,
+            837,
+            64609,
+            -1,
+            64723,
+            825,
+            64725,
+            824,
+            -1,
+            807,
+            64737,
+            806,
+            -1,
+            546,
+            64754
+          },
+          lens {
+            92,
+            1,
+            7,
+            1,
+            242,
+            1,
+            12,
+            1,
+            74,
+            2,
+            13,
+            2,
+            77,
+            3,
+            5,
+            3,
+            92,
+            3,
+            114,
+            2,
+            12,
+            1,
+            17,
+            1,
+            260
+          },
+          strands {
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus
+          }
+        }
+      },
+      {
+        type partial,
+        dim 2,
+        score {
+          {
+            id str "score",
+            value int 116
+          },
+          {
+            id str "e_value",
+            value real { 27497050797861, 10, -32 }
+          },
+          {
+            id str "bit_score",
+            value real { 105881694649606, 10, -12 }
+          },
+          {
+            id str "num_ident",
+            value int 460
+          },
+          {
+            id str "hsp_percent_coverage",
+            value real { 437780847145488, 10, -13 }
+          }
+        },
+        segs denseg {
+          dim 2,
+          numseg 27,
+          ids {
+            local str "Query_1",
+            local str "Meyerozyma_guilliermondii_atcc_6260_CH408159"
+          },
+          starts {
+            395,
+            998757,
+            516,
+            -1,
+            517,
+            998878,
+            -1,
+            998887,
+            526,
+            998888,
+            -1,
+            998957,
+            595,
+            998958,
+            602,
+            -1,
+            603,
+            998965,
+            743,
+            -1,
+            745,
+            999105,
+            -1,
+            999117,
+            757,
+            999119,
+            815,
+            -1,
+            816,
+            999177,
+            824,
+            -1,
+            825,
+            999185,
+            833,
+            -1,
+            834,
+            999193,
+            1004,
+            -1,
+            1005,
+            999363,
+            -1,
+            999369,
+            1011,
+            999370,
+            -1,
+            999400,
+            1041,
+            999401,
+            1055,
+            -1,
+            1056,
+            999415
+          },
+          lens {
+            121,
+            1,
+            9,
+            1,
+            69,
+            1,
+            7,
+            1,
+            140,
+            2,
+            12,
+            2,
+            58,
+            1,
+            8,
+            1,
+            8,
+            1,
+            170,
+            1,
+            6,
+            1,
+            30,
+            1,
+            14,
+            1,
+            44
+          },
+          strands {
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus
+          }
+        }
+      },
+      {
+        type partial,
+        dim 2,
+        score {
+          {
+            id str "score",
+            value int 76
+          },
+          {
+            id str "e_value",
+            value real { 197992237477497, 10, -22 }
+          },
+          {
+            id str "bit_score",
+            value real { 698143186273824, 10, -13 }
+          },
+          {
+            id str "num_ident",
+            value int 67
+          },
+          {
+            id str "hsp_percent_coverage",
+            value real { 57793124616329, 10, -13 }
+          }
+        },
+        segs denseg {
+          dim 2,
+          numseg 1,
+          ids {
+            local str "Query_1",
+            local str "Debaryomyces_hansenii_cbs767_F"
+          },
+          starts {
+            852,
+            2254386
+          },
+          lens {
+            86
+          },
+          strands {
+            plus,
+            plus
+          }
+        }
+      },
+      {
+        type partial,
+        dim 2,
+        score {
+          {
+            id str "score",
+            value int 72
+          },
+          {
+            id str "e_value",
+            value real { 241203923733577, 10, -21 }
+          },
+          {
+            id str "bit_score",
+            value real { 6620758102516, 10, -11 }
+          },
+          {
+            id str "num_ident",
+            value int 53
+          },
+          {
+            id str "hsp_percent_coverage",
+            value real { 424462860650706, 10, -14 }
+          }
+        },
+        segs denseg {
+          dim 2,
+          numseg 3,
+          ids {
+            local str "Query_1",
+            local str "Phlebiopsis_gigantea_11061_1_cr5_6_PHLGIscaffold_7"
+          },
+          starts {
+            363,
+            318286,
+            -1,
+            318296,
+            312,
+            318298
+          },
+          lens {
+            10,
+            2,
+            51
+          },
+          strands {
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus
+          }
+        }
+      },
+      {
+        type partial,
+        dim 2,
+        score {
+          {
+            id str "score",
+            value int 72
+          },
+          {
+            id str "e_value",
+            value real { 241203923733577, 10, -21 }
+          },
+          {
+            id str "bit_score",
+            value real { 6620758102516, 10, -11 }
+          },
+          {
+            id str "num_ident",
+            value int 72
+          },
+          {
+            id str "hsp_percent_coverage",
+            value real { 639318600368324, 10, -14 }
+          }
+        },
+        segs denseg {
+          dim 2,
+          numseg 1,
+          ids {
+            local str "Query_1",
+            local str "Komagataella_pastoris_cbs_7435_1"
+          },
+          starts {
+            843,
+            2863660
+          },
+          lens {
+            96
+          },
+          strands {
+            plus,
+            plus
+          }
+        }
+      },
+      {
+        type partial,
+        dim 2,
+        score {
+          {
+            id str "score",
+            value int 70
+          },
+          {
+            id str "e_value",
+            value real { 841884416515654, 10, -21 }
+          },
+          {
+            id str "bit_score",
+            value real { 644042122240488, 10, -13 }
+          },
+          {
+            id str "num_ident",
+            value int 68
+          },
+          {
+            id str "hsp_percent_coverage",
+            value real { 602486187845304, 10, -14 }
+          }
+        },
+        segs denseg {
+          dim 2,
+          numseg 1,
+          ids {
+            local str "Query_1",
+            local str "Ogataea_parapolymorpha_dl_1_VII"
+          },
+          starts {
+            840,
+            504110
+          },
+          lens {
+            90
+          },
+          strands {
+            minus,
+            plus
+          }
+        }
+      },
+      {
+        type partial,
+        dim 2,
+        score {
+          {
+            id str "score",
+            value int 70
+          },
+          {
+            id str "e_value",
+            value real { 841884416515654, 10, -21 }
+          },
+          {
+            id str "bit_score",
+            value real { 644042122240488, 10, -13 }
+          },
+          {
+            id str "num_ident",
+            value int 88
+          },
+          {
+            id str "hsp_percent_coverage",
+            value real { 805064456721915, 10, -14 }
+          }
+        },
+        segs denseg {
+          dim 2,
+          numseg 1,
+          ids {
+            local str "Query_1",
+            local str "Kluyveromyces_lactis_F"
+          },
+          starts {
+            852,
+            868733
+          },
+          lens {
+            123
+          },
+          strands {
+            plus,
+            plus
+          }
+        }
+      },
+      {
+        type partial,
+        dim 2,
+        score {
+          {
+            id str "score",
+            value int 70
+          },
+          {
+            id str "e_value",
+            value real { 841884416515654, 10, -21 }
+          },
+          {
+            id str "bit_score",
+            value real { 644042122240488, 10, -13 }
+          },
+          {
+            id str "num_ident",
+            value int 55
+          },
+          {
+            id str "hsp_percent_coverage",
+            value real { 46743400859423, 10, -13 }
+          }
+        },
+        segs denseg {
+          dim 2,
+          numseg 1,
+          ids {
+            local str "Query_1",
+            local str "Clavispora_lusitaniae_atcc_42720_CH408077"
+          },
+          starts {
+            852,
+            1413581
+          },
+          lens {
+            68
+          },
+          strands {
+            plus,
+            plus
+          }
+        }
+      },
+      {
+        type partial,
+        dim 2,
+        score {
+          {
+            id str "score",
+            value int 68
+          },
+          {
+            id str "e_value",
+            value real { 293846534418229, 10, -20 }
+          },
+          {
+            id str "bit_score",
+            value real { 626008434229376, 10, -13 }
+          },
+          {
+            id str "num_ident",
+            value int 64
+          },
+          {
+            id str "hsp_percent_coverage",
+            value real { 565653775322284, 10, -14 }
+          }
+        },
+        segs denseg {
+          dim 2,
+          numseg 1,
+          ids {
+            local str "Query_1",
+            local str "Togninia_minima_ucrpa7_PA7_03_scaffold_62"
+          },
+          starts {
+            840,
+            391591
+          },
+          lens {
+            84
+          },
+          strands {
+            plus,
+            plus
+          }
+        }
+      },
+      {
+        type partial,
+        dim 2,
+        score {
+          {
+            id str "score",
+            value int 66
+          },
+          {
+            id str "e_value",
+            value real { 102562518198123, 10, -19 }
+          },
+          {
+            id str "bit_score",
+            value real { 607974746218264, 10, -13 }
+          },
+          {
+            id str "num_ident",
+            value int 146
+          },
+          {
+            id str "hsp_percent_coverage",
+            value real { 135141190914672, 10, -13 }
+          }
+        },
+        segs denseg {
+          dim 2,
+          numseg 11,
+          ids {
+            local str "Query_1",
+            local str "Togninia_minima_ucrpa7_PA7_03_scaffold_610"
+          },
+          starts {
+            1569,
+            318638,
+            1568,
+            -1,
+            1562,
+            318679,
+            -1,
+            318685,
+            1494,
+            318686,
+            1493,
+            -1,
+            1482,
+            318754,
+            1481,
+            -1,
+            1478,
+            318765,
+            -1,
+            318768,
+            1398,
+            318770
+          },
+          lens {
+            41,
+            1,
+            6,
+            1,
+            68,
+            1,
+            11,
+            1,
+            3,
+            2,
+            80
+          },
+          strands {
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus
+          }
+        }
+      },
+      {
+        type partial,
+        dim 2,
+        score {
+          {
+            id str "score",
+            value int 66
+          },
+          {
+            id str "e_value",
+            value real { 102562518198123, 10, -19 }
+          },
+          {
+            id str "bit_score",
+            value real { 607974746218264, 10, -13 }
+          },
+          {
+            id str "num_ident",
+            value int 71
+          },
+          {
+            id str "hsp_percent_coverage",
+            value real { 639318600368324, 10, -14 }
+          }
+        },
+        segs denseg {
+          dim 2,
+          numseg 1,
+          ids {
+            local str "Query_1",
+            local str "Podospora_anserina_s_mat__CU633447"
+          },
+          starts {
+            840,
+            224640
+          },
+          lens {
+            96
+          },
+          strands {
+            minus,
+            plus
+          }
+        }
+      },
+      {
+        type partial,
+        dim 2,
+        score {
+          {
+            id str "score",
+            value int 64
+          },
+          {
+            id str "e_value",
+            value real { 357978363092372, 10, -19 }
+          },
+          {
+            id str "bit_score",
+            value real { 589941058207152, 10, -13 }
+          },
+          {
+            id str "num_ident",
+            value int 79
+          },
+          {
+            id str "hsp_percent_coverage",
+            value real { 688428483732351, 10, -14 }
+          }
+        },
+        segs denseg {
+          dim 2,
+          numseg 7,
+          ids {
+            local str "Query_1",
+            local str "Torulaspora_delbrueckii_3"
+          },
+          starts {
+            177,
+            5523,
+            -1,
+            5583,
+            237,
+            5584,
+            266,
+            -1,
+            268,
+            5613,
+            -1,
+            5617,
+            272,
+            5619
+          },
+          lens {
+            60,
+            1,
+            29,
+            2,
+            4,
+            2,
+            9
+          },
+          strands {
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus
+          }
+        }
+      },
+      {
+        type partial,
+        dim 2,
+        score {
+          {
+            id str "score",
+            value int 64
+          },
+          {
+            id str "e_value",
+            value real { 357978363092372, 10, -19 }
+          },
+          {
+            id str "bit_score",
+            value real { 589941058207152, 10, -13 }
+          },
+          {
+            id str "num_ident",
+            value int 61
+          },
+          {
+            id str "hsp_percent_coverage",
+            value real { 54109883364027, 10, -13 }
+          }
+        },
+        segs denseg {
+          dim 2,
+          numseg 1,
+          ids {
+            local str "Query_1",
+            local str "Gaeumannomyces_graminis_Gae_graminis_V2_supercont1.2"
+          },
+          starts {
+            840,
+            2862682
+          },
+          lens {
+            80
+          },
+          strands {
+            minus,
+            plus
+          }
+        }
+      },
+      {
+        type partial,
+        dim 2,
+        score {
+          {
+            id str "score",
+            value int 64
+          },
+          {
+            id str "e_value",
+            value real { 357978363092372, 10, -19 }
+          },
+          {
+            id str "bit_score",
+            value real { 589941058207152, 10, -13 }
+          },
+          {
+            id str "num_ident",
+            value int 61
+          },
+          {
+            id str "hsp_percent_coverage",
+            value real { 54109883364027, 10, -13 }
+          }
+        },
+        segs denseg {
+          dim 2,
+          numseg 1,
+          ids {
+            local str "Query_1",
+            local str "Fibroporia_radiculosa_HE797122"
+          },
+          starts {
+            525,
+            19837
+          },
+          lens {
+            80
+          },
+          strands {
+            plus,
+            plus
+          }
+        }
+      },
+      {
+        type partial,
+        dim 2,
+        score {
+          {
+            id str "score",
+            value int 62
+          },
+          {
+            id str "e_value",
+            value real { 124946725854318, 10, -18 }
+          },
+          {
+            id str "bit_score",
+            value real { 57190737019604, 10, -12 }
+          },
+          {
+            id str "num_ident",
+            value int 61
+          },
+          {
+            id str "hsp_percent_coverage",
+            value real { 547237569060773, 10, -14 }
+          }
+        },
+        segs denseg {
+          dim 2,
+          numseg 1,
+          ids {
+            local str "Query_1",
+            local str "Verruconis_gallopava_supercont1.4"
+          },
+          starts {
+            840,
+            320114
+          },
+          lens {
+            81
+          },
+          strands {
+            plus,
+            plus
+          }
+        }
+      },
+      {
+        type partial,
+        dim 2,
+        score {
+          {
+            id str "score",
+            value int 62
+          },
+          {
+            id str "e_value",
+            value real { 124946725854318, 10, -18 }
+          },
+          {
+            id str "bit_score",
+            value real { 57190737019604, 10, -12 }
+          },
+          {
+            id str "num_ident",
+            value int 57
+          },
+          {
+            id str "hsp_percent_coverage",
+            value real { 50426642111725, 10, -13 }
+          }
+        },
+        segs denseg {
+          dim 2,
+          numseg 1,
+          ids {
+            local str "Query_1",
+            local str "Exophiala_mesophila_supercont1.5"
+          },
+          starts {
+            852,
+            1290875
+          },
+          lens {
+            74
+          },
+          strands {
+            minus,
+            plus
+          }
+        }
+      },
+      {
+        type partial,
+        dim 2,
+        score {
+          {
+            id str "score",
+            value int 60
+          },
+          {
+            id str "e_value",
+            value real { 436106924643533, 10, -18 }
+          },
+          {
+            id str "bit_score",
+            value real { 553873682184928, 10, -13 }
+          },
+          {
+            id str "num_ident",
+            value int 65
+          },
+          {
+            id str "hsp_percent_coverage",
+            value real { 57793124616329, 10, -13 }
+          }
+        },
+        segs denseg {
+          dim 2,
+          numseg 3,
+          ids {
+            local str "Query_1",
+            local str "Zymoseptoria_tritici_MG2_5"
+          },
+          starts {
+            926,
+            2303880,
+            -1,
+            2303892,
+            852,
+            2303893
+          },
+          lens {
+            12,
+            1,
+            74
+          },
+          strands {
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus
+          }
+        }
+      },
+      {
+        type partial,
+        dim 2,
+        score {
+          {
+            id str "score",
+            value int 60
+          },
+          {
+            id str "e_value",
+            value real { 436106924643533, 10, -18 }
+          },
+          {
+            id str "bit_score",
+            value real { 553873682184928, 10, -13 }
+          },
+          {
+            id str "num_ident",
+            value int 66
+          },
+          {
+            id str "hsp_percent_coverage",
+            value real { 602486187845304, 10, -14 }
+          }
+        },
+        segs denseg {
+          dim 2,
+          numseg 1,
+          ids {
+            local str "Query_1",
+            local str "Yarrowia_lipolytica_B"
+          },
+          starts {
+            840,
+            2763413
+          },
+          lens {
+            90
+          },
+          strands {
+            minus,
+            plus
+          }
+        }
+      },
+      {
+        type partial,
+        dim 2,
+        score {
+          {
+            id str "score",
+            value int 60
+          },
+          {
+            id str "e_value",
+            value real { 436106924643533, 10, -18 }
+          },
+          {
+            id str "bit_score",
+            value real { 553873682184928, 10, -13 }
+          },
+          {
+            id str "num_ident",
+            value int 60
+          },
+          {
+            id str "hsp_percent_coverage",
+            value real { 516543891958257, 10, -14 }
+          }
+        },
+        segs denseg {
+          dim 2,
+          numseg 5,
+          ids {
+            local str "Query_1",
+            local str "Wickerhamomyces_ciferrii_CAIF01000246"
+          },
+          starts {
+            850,
+            7584,
+            -1,
+            7624,
+            890,
+            7625,
+            902,
+            -1,
+            903,
+            7637
+          },
+          lens {
+            40,
+            1,
+            12,
+            1,
+            23
+          },
+          strands {
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus
+          }
+        }
+      },
+      {
+        type partial,
+        dim 2,
+        score {
+          {
+            id str "score",
+            value int 60
+          },
+          {
+            id str "e_value",
+            value real { 436106924643533, 10, -18 }
+          },
+          {
+            id str "bit_score",
+            value real { 553873682184928, 10, -13 }
+          },
+          {
+            id str "num_ident",
+            value int 93
+          },
+          {
+            id str "hsp_percent_coverage",
+            value real { 878729281767956, 10, -14 }
+          }
+        },
+        segs denseg {
+          dim 2,
+          numseg 1,
+          ids {
+            local str "Query_1",
+            local str "Exophiala_oligosperma_supercont1.1"
+          },
+          starts {
+            840,
+            532649
+          },
+          lens {
+            135
+          },
+          strands {
+            plus,
+            plus
+          }
+        }
+      },
+      {
+        type partial,
+        dim 2,
+        score {
+          {
+            id str "score",
+            value int 54
+          },
+          {
+            id str "e_value",
+            value real { 185437383035629, 10, -16 }
+          },
+          {
+            id str "bit_score",
+            value real { 499772618151592, 10, -13 }
+          },
+          {
+            id str "num_ident",
+            value int 57
+          },
+          {
+            id str "hsp_percent_coverage",
+            value real { 52268262737876, 10, -13 }
+          }
+        },
+        segs denseg {
+          dim 2,
+          numseg 1,
+          ids {
+            local str "Query_1",
+            local str "Exophiala_oligosperma_supercont1.1"
+          },
+          starts {
+            852,
+            2625137
+          },
+          lens {
+            77
+          },
+          strands {
+            plus,
+            plus
+          }
+        }
+      },
+      {
+        type partial,
+        dim 2,
+        score {
+          {
+            id str "score",
+            value int 60
+          },
+          {
+            id str "e_value",
+            value real { 436106924643533, 10, -18 }
+          },
+          {
+            id str "bit_score",
+            value real { 553873682184928, 10, -13 }
+          },
+          {
+            id str "num_ident",
+            value int 66
+          },
+          {
+            id str "hsp_percent_coverage",
+            value real { 602486187845304, 10, -14 }
+          }
+        },
+        segs denseg {
+          dim 2,
+          numseg 1,
+          ids {
+            local str "Query_1",
+            local str "Exophiala_dermatitidis_nih_ut8656_supercont1.6"
+          },
+          starts {
+            840,
+            931749
+          },
+          lens {
+            90
+          },
+          strands {
+            minus,
+            plus
+          }
+        }
+      },
+      {
+        type partial,
+        dim 2,
+        score {
+          {
+            id str "score",
+            value int 60
+          },
+          {
+            id str "e_value",
+            value real { 436106924643533, 10, -18 }
+          },
+          {
+            id str "bit_score",
+            value real { 553873682184928, 10, -13 }
+          },
+          {
+            id str "num_ident",
+            value int 53
+          },
+          {
+            id str "hsp_percent_coverage",
+            value real { 46743400859423, 10, -13 }
+          }
+        },
+        segs denseg {
+          dim 2,
+          numseg 1,
+          ids {
+            local str "Query_1",
+            local str "Bipolaris_sorokiniana_nd90pr_COCSAscaffold_1"
+          },
+          starts {
+            852,
+            1070158
+          },
+          lens {
+            68
+          },
+          strands {
+            minus,
+            plus
+          }
+        }
+      },
+      {
+        type partial,
+        dim 2,
+        score {
+          {
+            id str "score",
+            value int 60
+          },
+          {
+            id str "e_value",
+            value real { 436106924643533, 10, -18 }
+          },
+          {
+            id str "bit_score",
+            value real { 553873682184928, 10, -13 }
+          },
+          {
+            id str "num_ident",
+            value int 55
+          },
+          {
+            id str "hsp_percent_coverage",
+            value real { 46743400859423, 10, -13 }
+          }
+        },
+        segs denseg {
+          dim 2,
+          numseg 5,
+          ids {
+            local str "Query_1",
+            local str "Bipolaris_oryzae_atcc_44560_scaffold_5"
+          },
+          starts {
+            852,
+            69924,
+            -1,
+            69962,
+            890,
+            69963,
+            902,
+            -1,
+            903,
+            69975
+          },
+          lens {
+            38,
+            1,
+            12,
+            1,
+            17
+          },
+          strands {
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus
+          }
+        }
+      },
+      {
+        type partial,
+        dim 2,
+        score {
+          {
+            id str "score",
+            value int 58
+          },
+          {
+            id str "e_value",
+            value real { 15221627331299, 10, -16 }
+          },
+          {
+            id str "bit_score",
+            value real { 535839994173816, 10, -13 }
+          },
+          {
+            id str "num_ident",
+            value int 50
+          },
+          {
+            id str "hsp_percent_coverage",
+            value real { 442879066912216, 10, -14 }
+          }
+        },
+        segs denseg {
+          dim 2,
+          numseg 1,
+          ids {
+            local str "Query_1",
+            local str "Bipolaris_victoriae_fi3_scaffold_13"
+          },
+          starts {
+            845,
+            121992
+          },
+          lens {
+            64
+          },
+          strands {
+            plus,
+            plus
+          }
+        }
+      },
+      {
+        type partial,
+        dim 2,
+        score {
+          {
+            id str "score",
+            value int 54
+          },
+          {
+            id str "e_value",
+            value real { 185437383035629, 10, -16 }
+          },
+          {
+            id str "bit_score",
+            value real { 499772618151592, 10, -13 }
+          },
+          {
+            id str "num_ident",
+            value int 45
+          },
+          {
+            id str "hsp_percent_coverage",
+            value real { 399907918968692, 10, -14 }
+          }
+        },
+        segs denseg {
+          dim 2,
+          numseg 1,
+          ids {
+            local str "Query_1",
+            local str "Wickerhamomyces_ciferrii_CAIF01000017"
+          },
+          starts {
+            852,
+            3673
+          },
+          lens {
+            57
+          },
+          strands {
+            plus,
+            plus
+          }
+        }
+      },
+      {
+        type partial,
+        dim 2,
+        score {
+          {
+            id str "score",
+            value int 52
+          },
+          {
+            id str "e_value",
+            value real { 647240063928561, 10, -16 }
+          },
+          {
+            id str "bit_score",
+            value real { 48173893014048, 10, -12 }
+          },
+          {
+            id str "num_ident",
+            value int 135
+          },
+          {
+            id str "hsp_percent_coverage",
+            value real { 127774708410068, 10, -13 }
+          }
+        },
+        segs denseg {
+          dim 2,
+          numseg 9,
+          ids {
+            local str "Query_1",
+            local str "Wickerhamomyces_ciferrii_CAIF01000017"
+          },
+          starts {
+            1359,
+            6590,
+            -1,
+            6682,
+            1451,
+            6683,
+            -1,
+            6691,
+            1459,
+            6692,
+            1466,
+            -1,
+            1469,
+            6699,
+            -1,
+            6718,
+            1488,
+            6719
+          },
+          lens {
+            92,
+            1,
+            8,
+            1,
+            7,
+            3,
+            19,
+            1,
+            71
+          },
+          strands {
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus
+          }
+        }
+      },
+      {
+        type partial,
+        dim 2,
+        score {
+          {
+            id str "score",
+            value int 54
+          },
+          {
+            id str "e_value",
+            value real { 185437383035629, 10, -16 }
+          },
+          {
+            id str "bit_score",
+            value real { 499772618151592, 10, -13 }
+          },
+          {
+            id str "num_ident",
+            value int 59
+          },
+          {
+            id str "hsp_percent_coverage",
+            value real { 54109883364027, 10, -13 }
+          }
+        },
+        segs denseg {
+          dim 2,
+          numseg 1,
+          ids {
+            local str "Query_1",
+            local str "Setosphaeria_turcica_et28a_SETTUscaffold_10"
+          },
+          starts {
+            840,
+            639589
+          },
+          lens {
+            80
+          },
+          strands {
+            plus,
+            plus
+          }
+        }
+      },
+      {
+        type partial,
+        dim 2,
+        score {
+          {
+            id str "score",
+            value int 54
+          },
+          {
+            id str "e_value",
+            value real { 185437383035629, 10, -16 }
+          },
+          {
+            id str "bit_score",
+            value real { 499772618151592, 10, -13 }
+          },
+          {
+            id str "num_ident",
+            value int 59
+          },
+          {
+            id str "hsp_percent_coverage",
+            value real { 54109883364027, 10, -13 }
+          }
+        },
+        segs denseg {
+          dim 2,
+          numseg 1,
+          ids {
+            local str "Query_1",
+            local str "Pyrenophora_triticirepentis_supercont1.5"
+          },
+          starts {
+            840,
+            382336
+          },
+          lens {
+            80
+          },
+          strands {
+            minus,
+            plus
+          }
+        }
+      },
+      {
+        type partial,
+        dim 2,
+        score {
+          {
+            id str "score",
+            value int 54
+          },
+          {
+            id str "e_value",
+            value real { 185437383035629, 10, -16 }
+          },
+          {
+            id str "bit_score",
+            value real { 499772618151592, 10, -13 }
+          },
+          {
+            id str "num_ident",
+            value int 66
+          },
+          {
+            id str "hsp_percent_coverage",
+            value real { 614763658686311, 10, -14 }
+          }
+        },
+        segs denseg {
+          dim 2,
+          numseg 1,
+          ids {
+            local str "Query_1",
+            local str "Lachancea_lanzarotensis_LN736370"
+          },
+          starts {
+            840,
+            128671
+          },
+          lens {
+            92
+          },
+          strands {
+            minus,
+            plus
+          }
+        }
+      },
+      {
+        type partial,
+        dim 2,
+        score {
+          {
+            id str "score",
+            value int 54
+          },
+          {
+            id str "e_value",
+            value real { 185437383035629, 10, -16 }
+          },
+          {
+            id str "bit_score",
+            value real { 499772618151592, 10, -13 }
+          },
+          {
+            id str "num_ident",
+            value int 59
+          },
+          {
+            id str "hsp_percent_coverage",
+            value real { 54109883364027, 10, -13 }
+          }
+        },
+        segs denseg {
+          dim 2,
+          numseg 1,
+          ids {
+            local str "Query_1",
+            local str "Colletotrichum_gloeosporioides_cg_14_contig02399"
+          },
+          starts {
+            840,
+            26933
+          },
+          lens {
+            80
+          },
+          strands {
+            plus,
+            plus
+          }
+        }
+      },
+      {
+        type partial,
+        dim 2,
+        score {
+          {
+            id str "score",
+            value int 54
+          },
+          {
+            id str "e_value",
+            value real { 185437383035629, 10, -16 }
+          },
+          {
+            id str "bit_score",
+            value real { 499772618151592, 10, -13 }
+          },
+          {
+            id str "num_ident",
+            value int 86
+          },
+          {
+            id str "hsp_percent_coverage",
+            value real { 798925721301412, 10, -14 }
+          }
+        },
+        segs denseg {
+          dim 2,
+          numseg 3,
+          ids {
+            local str "Query_1",
+            local str "Capronia_epimyces_cbs_606_96_aczIQ-supercont1.1"
+          },
+          starts {
+            862,
+            2565122,
+            -1,
+            2565234,
+            852,
+            2565236
+          },
+          lens {
+            112,
+            2,
+            10
+          },
+          strands {
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus
+          }
+        }
+      },
+      {
+        type partial,
+        dim 2,
+        score {
+          {
+            id str "score",
+            value int 54
+          },
+          {
+            id str "e_value",
+            value real { 185437383035629, 10, -16 }
+          },
+          {
+            id str "bit_score",
+            value real { 499772618151592, 10, -13 }
+          },
+          {
+            id str "num_ident",
+            value int 45
+          },
+          {
+            id str "hsp_percent_coverage",
+            value real { 399907918968692, 10, -14 }
+          }
+        },
+        segs denseg {
+          dim 2,
+          numseg 1,
+          ids {
+            local str "Query_1",
+            local str "Bipolaris_zeicola_26_r_13_scaffold_31"
+          },
+          starts {
+            852,
+            117975
+          },
+          lens {
+            57
+          },
+          strands {
+            minus,
+            plus
+          }
+        }
+      },
+      {
+        type partial,
+        dim 2,
+        score {
+          {
+            id str "score",
+            value int 52
+          },
+          {
+            id str "e_value",
+            value real { 647240063928561, 10, -16 }
+          },
+          {
+            id str "bit_score",
+            value real { 48173893014048, 10, -12 }
+          },
+          {
+            id str "num_ident",
+            value int 35
+          },
+          {
+            id str "hsp_percent_coverage",
+            value real { 301688152240638, 10, -14 }
+          }
+        },
+        segs denseg {
+          dim 2,
+          numseg 1,
+          ids {
+            local str "Query_1",
+            local str "Togninia_minima_ucrpa7_PA7_03_scaffold_348"
+          },
+          starts {
+            852,
+            368702
+          },
+          lens {
+            41
+          },
+          strands {
+            plus,
+            plus
+          }
+        }
+      },
+      {
+        type partial,
+        dim 2,
+        score {
+          {
+            id str "score",
+            value int 52
+          },
+          {
+            id str "e_value",
+            value real { 647240063928561, 10, -16 }
+          },
+          {
+            id str "bit_score",
+            value real { 48173893014048, 10, -12 }
+          },
+          {
+            id str "num_ident",
+            value int 59
+          },
+          {
+            id str "hsp_percent_coverage",
+            value real { 547237569060773, 10, -14 }
+          }
+        },
+        segs denseg {
+          dim 2,
+          numseg 1,
+          ids {
+            local str "Query_1",
+            local str "Spathaspora_passalidarum_nrrl_y_27907_SPAPAscaffold_8"
+          },
+          starts {
+            840,
+            486124
+          },
+          lens {
+            81
+          },
+          strands {
+            plus,
+            plus
+          }
+        }
+      },
+      {
+        type partial,
+        dim 2,
+        score {
+          {
+            id str "score",
+            value int 52
+          },
+          {
+            id str "e_value",
+            value real { 647240063928561, 10, -16 }
+          },
+          {
+            id str "bit_score",
+            value real { 48173893014048, 10, -12 }
+          },
+          {
+            id str "num_ident",
+            value int 52
+          },
+          {
+            id str "hsp_percent_coverage",
+            value real { 473572744014733, 10, -14 }
+          }
+        },
+        segs denseg {
+          dim 2,
+          numseg 1,
+          ids {
+            local str "Query_1",
+            local str "Pyrenophora_teres_GL532841"
+          },
+          starts {
+            852,
+            7363
+          },
+          lens {
+            69
+          },
+          strands {
+            minus,
+            plus
+          }
+        }
+      },
+      {
+        type partial,
+        dim 2,
+        score {
+          {
+            id str "score",
+            value int 52
+          },
+          {
+            id str "e_value",
+            value real { 647240063928561, 10, -16 }
+          },
+          {
+            id str "bit_score",
+            value real { 48173893014048, 10, -12 }
+          },
+          {
+            id str "num_ident",
+            value int 52
+          },
+          {
+            id str "hsp_percent_coverage",
+            value real { 473572744014733, 10, -14 }
+          }
+        },
+        segs denseg {
+          dim 2,
+          numseg 1,
+          ids {
+            local str "Query_1",
+            local str "Pichia_kudriavzevii_scaffold00023"
+          },
+          starts {
+            852,
+            137803
+          },
+          lens {
+            69
+          },
+          strands {
+            plus,
+            plus
+          }
+        }
+      },
+      {
+        type partial,
+        dim 2,
+        score {
+          {
+            id str "score",
+            value int 52
+          },
+          {
+            id str "e_value",
+            value real { 647240063928561, 10, -16 }
+          },
+          {
+            id str "bit_score",
+            value real { 48173893014048, 10, -12 }
+          },
+          {
+            id str "num_ident",
+            value int 125
+          },
+          {
+            id str "hsp_percent_coverage",
+            value real { 119180478821363, 10, -13 }
+          }
+        },
+        segs denseg {
+          dim 2,
+          numseg 7,
+          ids {
+            local str "Query_1",
+            local str "Candida_orthopsilosis_co_90_125_7"
+          },
+          starts {
+            465,
+            613539,
+            464,
+            -1,
+            457,
+            613545,
+            -1,
+            613552,
+            304,
+            613553,
+            302,
+            -1,
+            285,
+            613706
+          },
+          lens {
+            6,
+            1,
+            7,
+            1,
+            153,
+            2,
+            17
+          },
+          strands {
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus
+          }
+        }
+      },
+      {
+        type partial,
+        dim 2,
+        score {
+          {
+            id str "score",
+            value int 50
+          },
+          {
+            id str "e_value",
+            value real { 22590897989202, 10, -14 }
+          },
+          {
+            id str "bit_score",
+            value real { 463705242129368, 10, -13 }
+          },
+          {
+            id str "num_ident",
+            value int 65
+          },
+          {
+            id str "hsp_percent_coverage",
+            value real { 584069981583794, 10, -14 }
+          }
+        },
+        segs denseg {
+          dim 2,
+          numseg 5,
+          ids {
+            local str "Query_1",
+            local str "Sporothrix_brasiliensis_5110_Cont17"
+          },
+          starts {
+            546,
+            2158210,
+            595,
+            -1,
+            599,
+            2158259,
+            -1,
+            2158262,
+            602,
+            2158266
+          },
+          lens {
+            49,
+            4,
+            3,
+            4,
+            31
+          },
+          strands {
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus
+          }
+        }
+      },
+      {
+        type partial,
+        dim 2,
+        score {
+          {
+            id str "score",
+            value int 50
+          },
+          {
+            id str "e_value",
+            value real { 22590897989202, 10, -14 }
+          },
+          {
+            id str "bit_score",
+            value real { 463705242129368, 10, -13 }
+          },
+          {
+            id str "num_ident",
+            value int 101
+          },
+          {
+            id str "hsp_percent_coverage",
+            value real { 946255371393493, 10, -14 }
+          }
+        },
+        segs denseg {
+          dim 2,
+          numseg 7,
+          ids {
+            local str "Query_1",
+            local str "Scheffersomyces_stipitis_cbs_6054_2"
+          },
+          starts {
+            174,
+            215462,
+            -1,
+            215566,
+            278,
+            215567,
+            -1,
+            215574,
+            285,
+            215575,
+            301,
+            -1,
+            303,
+            215591
+          },
+          lens {
+            104,
+            1,
+            7,
+            1,
+            16,
+            2,
+            17
+          },
+          strands {
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus
+          }
+        }
+      },
+      {
+        type partial,
+        dim 2,
+        score {
+          {
+            id str "score",
+            value int 50
+          },
+          {
+            id str "e_value",
+            value real { 22590897989202, 10, -14 }
+          },
+          {
+            id str "bit_score",
+            value real { 463705242129368, 10, -13 }
+          },
+          {
+            id str "num_ident",
+            value int 58
+          },
+          {
+            id str "hsp_percent_coverage",
+            value real { 54109883364027, 10, -13 }
+          }
+        },
+        segs denseg {
+          dim 2,
+          numseg 1,
+          ids {
+            local str "Query_1",
+            local str "Postia_placenta_mad_698_r_EQ966350"
+          },
+          starts {
+            525,
+            49829
+          },
+          lens {
+            80
+          },
+          strands {
+            plus,
+            plus
+          }
+        }
+      },
+      {
+        type partial,
+        dim 2,
+        score {
+          {
+            id str "score",
+            value int 50
+          },
+          {
+            id str "e_value",
+            value real { 22590897989202, 10, -14 }
+          },
+          {
+            id str "bit_score",
+            value real { 463705242129368, 10, -13 }
+          },
+          {
+            id str "num_ident",
+            value int 58
+          },
+          {
+            id str "hsp_percent_coverage",
+            value real { 54109883364027, 10, -13 }
+          }
+        },
+        segs denseg {
+          dim 2,
+          numseg 1,
+          ids {
+            local str "Query_1",
+            local str "Kuraishia_capsulata_cbs_1993_HG793127"
+          },
+          starts {
+            840,
+            430957
+          },
+          lens {
+            80
+          },
+          strands {
+            plus,
+            plus
+          }
+        }
+      },
+      {
+        type partial,
+        dim 2,
+        score {
+          {
+            id str "score",
+            value int 50
+          },
+          {
+            id str "e_value",
+            value real { 22590897989202, 10, -14 }
+          },
+          {
+            id str "bit_score",
+            value real { 463705242129368, 10, -13 }
+          },
+          {
+            id str "num_ident",
+            value int 84
+          },
+          {
+            id str "hsp_percent_coverage",
+            value real { 805064456721915, 10, -14 }
+          }
+        },
+        segs denseg {
+          dim 2,
+          numseg 1,
+          ids {
+            local str "Query_1",
+            local str "Fusarium_solani_v2_0_12"
+          },
+          starts {
+            851,
+            1492257
+          },
+          lens {
+            123
+          },
+          strands {
+            plus,
+            plus
+          }
+        }
+      },
+      {
+        type partial,
+        dim 2,
+        score {
+          {
+            id str "score",
+            value int 50
+          },
+          {
+            id str "e_value",
+            value real { 22590897989202, 10, -14 }
+          },
+          {
+            id str "bit_score",
+            value real { 463705242129368, 10, -13 }
+          },
+          {
+            id str "num_ident",
+            value int 64
+          },
+          {
+            id str "hsp_percent_coverage",
+            value real { 602486187845304, 10, -14 }
+          }
+        },
+        segs denseg {
+          dim 2,
+          numseg 1,
+          ids {
+            local str "Query_1",
+            local str "Bipolaris_oryzae_atcc_44560_scaffold_69"
+          },
+          starts {
+            1512,
+            82354
+          },
+          lens {
+            90
+          },
+          strands {
+            plus,
+            plus
+          }
+        }
+      },
+      {
+        type partial,
+        dim 2,
+        score {
+          {
+            id str "score",
+            value int 50
+          },
+          {
+            id str "e_value",
+            value real { 22590897989202, 10, -14 }
+          },
+          {
+            id str "bit_score",
+            value real { 463705242129368, 10, -13 }
+          },
+          {
+            id str "num_ident",
+            value int 91
+          },
+          {
+            id str "hsp_percent_coverage",
+            value real { 878729281767956, 10, -14 }
+          }
+        },
+        segs denseg {
+          dim 2,
+          numseg 1,
+          ids {
+            local str "Query_1",
+            local str "Aspergillus_oryzae_CADRE2_II"
+          },
+          starts {
+            840,
+            3491016
+          },
+          lens {
+            135
+          },
+          strands {
+            minus,
+            plus
+          }
+        }
+      },
+      {
+        type partial,
+        dim 2,
+        score {
+          {
+            id str "score",
+            value int 50
+          },
+          {
+            id str "e_value",
+            value real { 22590897989202, 10, -14 }
+          },
+          {
+            id str "bit_score",
+            value real { 463705242129368, 10, -13 }
+          },
+          {
+            id str "num_ident",
+            value int 91
+          },
+          {
+            id str "hsp_percent_coverage",
+            value real { 878729281767956, 10, -14 }
+          }
+        },
+        segs denseg {
+          dim 2,
+          numseg 1,
+          ids {
+            local str "Query_1",
+            local str "Aspergillus_oryzae_3_042_Contig194"
+          },
+          starts {
+            840,
+            732582
+          },
+          lens {
+            135
+          },
+          strands {
+            plus,
+            plus
+          }
+        }
+      },
+      {
+        type partial,
+        dim 2,
+        score {
+          {
+            id str "score",
+            value int 50
+          },
+          {
+            id str "e_value",
+            value real { 22590897989202, 10, -14 }
+          },
+          {
+            id str "bit_score",
+            value real { 463705242129368, 10, -13 }
+          },
+          {
+            id str "num_ident",
+            value int 91
+          },
+          {
+            id str "hsp_percent_coverage",
+            value real { 878729281767956, 10, -14 }
+          }
+        },
+        segs denseg {
+          dim 2,
+          numseg 1,
+          ids {
+            local str "Query_1",
+            local str "Aspergillus_oryzae_100_8_Contig155"
+          },
+          starts {
+            840,
+            344768
+          },
+          lens {
+            135
+          },
+          strands {
+            minus,
+            plus
+          }
+        }
+      },
+      {
+        type partial,
+        dim 2,
+        score {
+          {
+            id str "score",
+            value int 50
+          },
+          {
+            id str "e_value",
+            value real { 22590897989202, 10, -14 }
+          },
+          {
+            id str "bit_score",
+            value real { 463705242129368, 10, -13 }
+          },
+          {
+            id str "num_ident",
+            value int 91
+          },
+          {
+            id str "hsp_percent_coverage",
+            value real { 878729281767956, 10, -14 }
+          }
+        },
+        segs denseg {
+          dim 2,
+          numseg 1,
+          ids {
+            local str "Query_1",
+            local str "Aspergillus_flavus_af70_202"
+          },
+          starts {
+            840,
+            36782
+          },
+          lens {
+            135
+          },
+          strands {
+            plus,
+            plus
+          }
+        }
+      },
+      {
+        type partial,
+        dim 2,
+        score {
+          {
+            id str "score",
+            value int 48
+          },
+          {
+            id str "e_value",
+            value real { 788499816993502, 10, -15 }
+          },
+          {
+            id str "bit_score",
+            value real { 445671554118255, 10, -13 }
+          },
+          {
+            id str "num_ident",
+            value int 38
+          },
+          {
+            id str "hsp_percent_coverage",
+            value real { 338520564763659, 10, -14 }
+          }
+        },
+        segs denseg {
+          dim 2,
+          numseg 1,
+          ids {
+            local str "Query_1",
+            local str "Sporothrix_schenckii_atcc_58251_supercont1.2"
+          },
+          starts {
+            546,
+            2054459
+          },
+          lens {
+            47
+          },
+          strands {
+            plus,
+            plus
+          }
+        }
+      },
+      {
+        type partial,
+        dim 2,
+        score {
+          {
+            id str "score",
+            value int 48
+          },
+          {
+            id str "e_value",
+            value real { 788499816993502, 10, -15 }
+          },
+          {
+            id str "bit_score",
+            value real { 445671554118255, 10, -13 }
+          },
+          {
+            id str "num_ident",
+            value int 65
+          },
+          {
+            id str "hsp_percent_coverage",
+            value real { 614763658686311, 10, -14 }
+          }
+        },
+        segs denseg {
+          dim 2,
+          numseg 1,
+          ids {
+            local str "Query_1",
+            local str "Scheffersomyces_stipitis_cbs_6054_1"
+          },
+          starts {
+            174,
+            53710
+          },
+          lens {
+            92
+          },
+          strands {
+            plus,
+            plus
+          }
+        }
+      },
+      {
+        type partial,
+        dim 2,
+        score {
+          {
+            id str "score",
+            value int 48
+          },
+          {
+            id str "e_value",
+            value real { 788499816993502, 10, -15 }
+          },
+          {
+            id str "bit_score",
+            value real { 445671554118255, 10, -13 }
+          },
+          {
+            id str "num_ident",
+            value int 39
+          },
+          {
+            id str "hsp_percent_coverage",
+            value real { 350798035604665, 10, -14 }
+          }
+        },
+        segs denseg {
+          dim 2,
+          numseg 1,
+          ids {
+            local str "Query_1",
+            local str "Pseudogymnoascus_pannorum_vkm_f_4518_fw_2643__contig_21
+21"
+          },
+          starts {
+            548,
+            3879
+          },
+          lens {
+            49
+          },
+          strands {
+            plus,
+            plus
+          }
+        }
+      },
+      {
+        type partial,
+        dim 2,
+        score {
+          {
+            id str "score",
+            value int 48
+          },
+          {
+            id str "e_value",
+            value real { 788499816993502, 10, -15 }
+          },
+          {
+            id str "bit_score",
+            value real { 445671554118255, 10, -13 }
+          },
+          {
+            id str "num_ident",
+            value int 38
+          },
+          {
+            id str "hsp_percent_coverage",
+            value real { 338520564763659, 10, -14 }
+          }
+        },
+        segs denseg {
+          dim 2,
+          numseg 1,
+          ids {
+            local str "Query_1",
+            local str "Colletotrichum_gloeosporioides_cg_14_contig00502"
+          },
+          starts {
+            548,
+            4317
+          },
+          lens {
+            47
+          },
+          strands {
+            plus,
+            plus
+          }
+        }
+      },
+      {
+        type partial,
+        dim 2,
+        score {
+          {
+            id str "score",
+            value int 48
+          },
+          {
+            id str "e_value",
+            value real { 788499816993502, 10, -15 }
+          },
+          {
+            id str "bit_score",
+            value real { 445671554118255, 10, -13 }
+          },
+          {
+            id str "num_ident",
+            value int 47
+          },
+          {
+            id str "hsp_percent_coverage",
+            value real { 430601596071209, 10, -14 }
+          }
+        },
+        segs denseg {
+          dim 2,
+          numseg 1,
+          ids {
+            local str "Query_1",
+            local str "Chaetomium_thermophilum_var_thermophilum_dsm_1495_scf71
+80000011816"
+          },
+          starts {
+            1533,
+            3932504
+          },
+          lens {
+            62
+          },
+          strands {
+            plus,
+            plus
+          }
+        }
+      },
+      {
+        type partial,
+        dim 2,
+        score {
+          {
+            id str "score",
+            value int 48
+          },
+          {
+            id str "e_value",
+            value real { 788499816993502, 10, -15 }
+          },
+          {
+            id str "bit_score",
+            value real { 445671554118255, 10, -13 }
+          },
+          {
+            id str "num_ident",
+            value int 50
+          },
+          {
+            id str "hsp_percent_coverage",
+            value real { 461295273173726, 10, -14 }
+          }
+        },
+        segs denseg {
+          dim 2,
+          numseg 1,
+          ids {
+            local str "Query_1",
+            local str "Capronia_coronata_cbs_617_96_acBCG-supercont1.3"
+          },
+          starts {
+            853,
+            1092454
+          },
+          lens {
+            67
+          },
+          strands {
+            minus,
+            plus
+          }
+        }
+      },
+      {
+        type partial,
+        dim 2,
+        score {
+          {
+            id str "score",
+            value int 48
+          },
+          {
+            id str "e_value",
+            value real { 788499816993502, 10, -15 }
+          },
+          {
+            id str "bit_score",
+            value real { 445671554118255, 10, -13 }
+          },
+          {
+            id str "num_ident",
+            value int 47
+          },
+          {
+            id str "hsp_percent_coverage",
+            value real { 430601596071209, 10, -14 }
+          }
+        },
+        segs denseg {
+          dim 2,
+          numseg 1,
+          ids {
+            local str "Query_1",
+            local str "Candida_albicans_sc5314_AACQ01000016"
+          },
+          starts {
+            840,
+            123584
+          },
+          lens {
+            62
+          },
+          strands {
+            plus,
+            plus
+          }
+        }
+      },
+      {
+        type partial,
+        dim 2,
+        score {
+          {
+            id str "score",
+            value int 48
+          },
+          {
+            id str "e_value",
+            value real { 788499816993502, 10, -15 }
+          },
+          {
+            id str "bit_score",
+            value real { 445671554118255, 10, -13 }
+          },
+          {
+            id str "num_ident",
+            value int 47
+          },
+          {
+            id str "hsp_percent_coverage",
+            value real { 430601596071209, 10, -14 }
+          }
+        },
+        segs denseg {
+          dim 2,
+          numseg 1,
+          ids {
+            local str "Query_1",
+            local str "Candida_albicans_sc5314_AACQ01000020"
+          },
+          starts {
+            840,
+            116148
+          },
+          lens {
+            62
+          },
+          strands {
+            plus,
+            plus
+          }
+        }
+      },
+      {
+        type partial,
+        dim 2,
+        score {
+          {
+            id str "score",
+            value int 48
+          },
+          {
+            id str "e_value",
+            value real { 788499816993502, 10, -15 }
+          },
+          {
+            id str "bit_score",
+            value real { 445671554118255, 10, -13 }
+          },
+          {
+            id str "num_ident",
+            value int 56
+          },
+          {
+            id str "hsp_percent_coverage",
+            value real { 52268262737876, 10, -13 }
+          }
+        },
+        segs denseg {
+          dim 2,
+          numseg 1,
+          ids {
+            local str "Query_1",
+            local str "Bipolaris_maydis_atcc_48331_COCC4scaffold_10"
+          },
+          starts {
+            1535,
+            326164
+          },
+          lens {
+            77
+          },
+          strands {
+            plus,
+            plus
+          }
+        }
+      },
+      {
+        type partial,
+        dim 2,
+        score {
+          {
+            id str "score",
+            value int 46
+          },
+          {
+            id str "e_value",
+            value real { 275213478320322, 10, -14 }
+          },
+          {
+            id str "bit_score",
+            value real { 427637866107143, 10, -13 }
+          },
+          {
+            id str "num_ident",
+            value int 95
+          },
+          {
+            id str "hsp_percent_coverage",
+            value real { 927839165131983, 10, -14 }
+          }
+        },
+        segs denseg {
+          dim 2,
+          numseg 1,
+          ids {
+            local str "Query_1",
+            local str "Zygosaccharomyces_rouxii_F"
+          },
+          starts {
+            417,
+            29091
+          },
+          lens {
+            143
+          },
+          strands {
+            minus,
+            plus
+          }
+        }
+      },
+      {
+        type partial,
+        dim 2,
+        score {
+          {
+            id str "score",
+            value int 46
+          },
+          {
+            id str "e_value",
+            value real { 275213478320322, 10, -14 }
+          },
+          {
+            id str "bit_score",
+            value real { 427637866107143, 10, -13 }
+          },
+          {
+            id str "num_ident",
+            value int 49
+          },
+          {
+            id str "hsp_percent_coverage",
+            value real { 455156537753223, 10, -14 }
+          }
+        },
+        segs denseg {
+          dim 2,
+          numseg 1,
+          ids {
+            local str "Query_1",
+            local str "Wickerhamomyces_ciferrii_CAIF01000070"
+          },
+          starts {
+            838,
+            128318
+          },
+          lens {
+            66
+          },
+          strands {
+            plus,
+            plus
+          }
+        }
+      },
+      {
+        type partial,
+        dim 2,
+        score {
+          {
+            id str "score",
+            value int 46
+          },
+          {
+            id str "e_value",
+            value real { 275213478320322, 10, -14 }
+          },
+          {
+            id str "bit_score",
+            value real { 427637866107143, 10, -13 }
+          },
+          {
+            id str "num_ident",
+            value int 49
+          },
+          {
+            id str "hsp_percent_coverage",
+            value real { 455156537753223, 10, -14 }
+          }
+        },
+        segs denseg {
+          dim 2,
+          numseg 1,
+          ids {
+            local str "Query_1",
+            local str "Wickerhamomyces_ciferrii_CAIF01000070"
+          },
+          starts {
+            838,
+            132139
+          },
+          lens {
+            66
+          },
+          strands {
+            plus,
+            plus
+          }
+        }
+      },
+      {
+        type partial,
+        dim 2,
+        score {
+          {
+            id str "score",
+            value int 46
+          },
+          {
+            id str "e_value",
+            value real { 275213478320322, 10, -14 }
+          },
+          {
+            id str "bit_score",
+            value real { 427637866107143, 10, -13 }
+          },
+          {
+            id str "num_ident",
+            value int 58
+          },
+          {
+            id str "hsp_percent_coverage",
+            value real { 547237569060773, 10, -14 }
+          }
+        },
+        segs denseg {
+          dim 2,
+          numseg 1,
+          ids {
+            local str "Query_1",
+            local str "Wickerhamomyces_ciferrii_CAIF01000016"
+          },
+          starts {
+            840,
+            4158
+          },
+          lens {
+            81
+          },
+          strands {
+            plus,
+            plus
+          }
+        }
+      },
+      {
+        type partial,
+        dim 2,
+        score {
+          {
+            id str "score",
+            value int 46
+          },
+          {
+            id str "e_value",
+            value real { 275213478320322, 10, -14 }
+          },
+          {
+            id str "bit_score",
+            value real { 427637866107143, 10, -13 }
+          },
+          {
+            id str "num_ident",
+            value int 57
+          },
+          {
+            id str "hsp_percent_coverage",
+            value real { 528821362799263, 10, -14 }
+          }
+        },
+        segs denseg {
+          dim 2,
+          numseg 3,
+          ids {
+            local str "Query_1",
+            local str "Schizosaccharomyces_octosporus_supercont6.3"
+          },
+          starts {
+            924,
+            3024404,
+            923,
+            -1,
+            853,
+            3024411
+          },
+          lens {
+            7,
+            1,
+            70
+          },
+          strands {
+            minus,
+            plus,
+            minus,
+            plus,
+            minus,
+            plus
+          }
+        }
+      },
+      {
+        type partial,
+        dim 2,
+        score {
+          {
+            id str "score",
+            value int 46
+          },
+          {
+            id str "e_value",
+            value real { 275213478320322, 10, -14 }
+          },
+          {
+            id str "bit_score",
+            value real { 427637866107143, 10, -13 }
+          },
+          {
+            id str "num_ident",
+            value int 77
+          },
+          {
+            id str "hsp_percent_coverage",
+            value real { 743677102516881, 10, -14 }
+          }
+        },
+        segs denseg {
+          dim 2,
+          numseg 1,
+          ids {
+            local str "Query_1",
+            local str "Pseudogymnoascus_pannorum_vkm_f_4519_fw_2642__contig_18
+77"
+          },
+          starts {
+            861,
+            32417
+          },
+          lens {
+            113
+          },
+          strands {
+            plus,
+            plus
+          }
+        }
+      },
+      {
+        type partial,
+        dim 2,
+        score {
+          {
+            id str "score",
+            value int 46
+          },
+          {
+            id str "e_value",
+            value real { 275213478320322, 10, -14 }
+          },
+          {
+            id str "bit_score",
+            value real { 427637866107143, 10, -13 }
+          },
+          {
+            id str "num_ident",
+            value int 34
+          },
+          {
+            id str "hsp_percent_coverage",
+            value real { 301688152240638, 10, -14 }
+          }
+        },
+        segs denseg {
+          dim 2,
+          numseg 1,
+          ids {
+            local str "Query_1",
+            local str "Exophiala_xenobiotica_supercont1.3"
+          },
+          starts {
+            546,
+            3512573
+          },
+          lens {
+            41
+          },
+          strands {
+            plus,
+            plus
+          }
+        }
+      },
+      {
+        type partial,
+        dim 2,
+        score {
+          {
+            id str "score",
+            value int 46
+          },
+          {
+            id str "e_value",
+            value real { 275213478320322, 10, -14 }
+          },
+          {
+            id str "bit_score",
+            value real { 427637866107143, 10, -13 }
+          },
+          {
+            id str "num_ident",
+            value int 50
+          },
+          {
+            id str "hsp_percent_coverage",
+            value real { 46743400859423, 10, -13 }
+          }
+        },
+        segs denseg {
+          dim 2,
+          numseg 1,
+          ids {
+            local str "Query_1",
+            local str "Dactylellina_haptotyla_cbs_200_50_scaffold00171"
+          },
+          starts {
+            852,
+            132107
+          },
+          lens {
+            68
+          },
+          strands {
+            plus,
+            plus
+          }
+        }
+      },
+      {
+        type partial,
+        dim 2,
+        score {
+          {
+            id str "score",
+            value int 46
+          },
+          {
+            id str "e_value",
+            value real { 275213478320322, 10, -14 }
+          },
+          {
+            id str "bit_score",
+            value real { 427637866107143, 10, -13 }
+          },
+          {
+            id str "num_ident",
+            value int 32
+          },
+          {
+            id str "hsp_percent_coverage",
+            value real { 283271945979128, 10, -14 }
+          }
+        },
+        segs denseg {
+          dim 2,
+          numseg 1,
+          ids {
+            local str "Query_1",
+            local str "Cladophialophora_bantiana_cbs_173_52_supercont1.11"
+          },
+          starts {
+            555,
+            1192742
+          },
+          lens {
+            38
+          },
+          strands {
+            minus,
+            plus
+          }
+        }
+      },
+      {
+        type partial,
+        dim 2,
+        score {
+          {
+            id str "score",
+            value int 46
+          },
+          {
+            id str "e_value",
+            value real { 275213478320322, 10, -14 }
+          },
+          {
+            id str "bit_score",
+            value real { 427637866107143, 10, -13 }
+          },
+          {
+            id str "num_ident",
+            value int 40
+          },
+          {
+            id str "hsp_percent_coverage",
+            value real { 363075506445672, 10, -14 }
+          }
+        },
+        segs denseg {
+          dim 2,
+          numseg 1,
+          ids {
+            local str "Query_1",
+            local str "Ceriporiopsis_subvermispora_b_CERSUscaffold_1"
+          },
+          starts {
+            546,
+            3519384
+          },
+          lens {
+            51
+          },
+          strands {
+            plus,
+            plus
+          }
+        }
+      },
+      {
+        type partial,
+        dim 2,
+        score {
+          {
+            id str "score",
+            value int 46
+          },
+          {
+            id str "e_value",
+            value real { 275213478320322, 10, -14 }
+          },
+          {
+            id str "bit_score",
+            value real { 427637866107143, 10, -13 }
+          },
+          {
+            id str "num_ident",
+            value int 50
+          },
+          {
+            id str "hsp_percent_coverage",
+            value real { 46743400859423, 10, -13 }
+          }
+        },
+        segs denseg {
+          dim 2,
+          numseg 1,
+          ids {
+            local str "Query_1",
+            local str "Aspergillus_fumigatus_var_rp_2014_afvn_448"
+          },
+          starts {
+            852,
+            5350
+          },
+          lens {
+            68
+          },
+          strands {
+            minus,
+            plus
+          }
+        }
+      },
+      {
+        type partial,
+        dim 2,
+        score {
+          {
+            id str "score",
+            value int 46
+          },
+          {
+            id str "e_value",
+            value real { 275213478320322, 10, -14 }
+          },
+          {
+            id str "bit_score",
+            value real { 427637866107143, 10, -13 }
+          },
+          {
+            id str "num_ident",
+            value int 50
+          },
+          {
+            id str "hsp_percent_coverage",
+            value real { 46743400859423, 10, -13 }
+          }
+        },
+        segs denseg {
+          dim 2,
+          numseg 1,
+          ids {
+            local str "Query_1",
+            local str "Aspergillus_fumigatus_CADRE_IV"
+          },
+          starts {
+            852,
+            28674
+          },
+          lens {
+            68
+          },
+          strands {
+            minus,
+            plus
+          }
+        }
+      },
+      {
+        type partial,
+        dim 2,
+        score {
+          {
+            id str "score",
+            value int 46
+          },
+          {
+            id str "e_value",
+            value real { 275213478320322, 10, -14 }
+          },
+          {
+            id str "bit_score",
+            value real { 427637866107143, 10, -13 }
+          },
+          {
+            id str "num_ident",
+            value int 50
+          },
+          {
+            id str "hsp_percent_coverage",
+            value real { 46743400859423, 10, -13 }
+          }
+        },
+        segs denseg {
+          dim 2,
+          numseg 1,
+          ids {
+            local str "Query_1",
+            local str "Aspergillus_fumigatusa1163_CADRE_DS499604"
+          },
+          starts {
+            852,
+            33044
+          },
+          lens {
+            68
+          },
+          strands {
+            minus,
+            plus
+          }
+        }
+      },
+      {
+        type partial,
+        dim 2,
+        score {
+          {
+            id str "score",
+            value int 44
+          },
+          {
+            id str "e_value",
+            value real { 960589425853913, 10, -14 }
+          },
+          {
+            id str "bit_score",
+            value real { 409604178096031, 10, -13 }
+          },
+          {
+            id str "num_ident",
+            value int 79
+          },
+          {
+            id str "hsp_percent_coverage",
+            value real { 743677102516881, 10, -14 }
+          }
+        },
+        segs denseg {
+          dim 2,
+          numseg 5,
+          ids {
+            local str "Query_1",
+            local str "Trichoderma_virens_ASM17099v1_6"
+          },
+          starts {
+            861,
+            2826288,
+            935,
+            -1,
+            936,
+            2826362,
+            -1,
+            2826366,
+            940,
+            2826367
+          },
+          lens {
+            74,
+            1,
+            4,
+            1,
+            34
+          },
+          strands {
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus
+          }
+        }
+      },
+      {
+        type partial,
+        dim 2,
+        score {
+          {
+            id str "score",
+            value int 44
+          },
+          {
+            id str "e_value",
+            value real { 960589425853913, 10, -14 }
+          },
+          {
+            id str "bit_score",
+            value real { 409604178096031, 10, -13 }
+          },
+          {
+            id str "num_ident",
+            value int 39
+          },
+          {
+            id str "hsp_percent_coverage",
+            value real { 356936771025169, 10, -14 }
+          }
+        },
+        segs denseg {
+          dim 2,
+          numseg 1,
+          ids {
+            local str "Query_1",
+            local str "Scheffersomyces_stipitis_cbs_6054_8"
+          },
+          starts {
+            857,
+            802399
+          },
+          lens {
+            50
+          },
+          strands {
+            plus,
+            plus
+          }
+        }
+      },
+      {
+        type partial,
+        dim 2,
+        score {
+          {
+            id str "score",
+            value int 44
+          },
+          {
+            id str "e_value",
+            value real { 960589425853913, 10, -14 }
+          },
+          {
+            id str "bit_score",
+            value real { 409604178096031, 10, -13 }
+          },
+          {
+            id str "num_ident",
+            value int 51
+          },
+          {
+            id str "hsp_percent_coverage",
+            value real { 479711479435236, 10, -14 }
+          }
+        },
+        segs denseg {
+          dim 2,
+          numseg 1,
+          ids {
+            local str "Query_1",
+            local str "Saccharomyces_cerevisiae_R64-1-1_XV"
+          },
+          starts {
+            840,
+            9974
+          },
+          lens {
+            70
+          },
+          strands {
+            plus,
+            plus
+          }
+        }
+      },
+      {
+        type partial,
+        dim 2,
+        score {
+          {
+            id str "score",
+            value int 44
+          },
+          {
+            id str "e_value",
+            value real { 960589425853913, 10, -14 }
+          },
+          {
+            id str "bit_score",
+            value real { 409604178096031, 10, -13 }
+          },
+          {
+            id str "num_ident",
+            value int 51
+          },
+          {
+            id str "hsp_percent_coverage",
+            value real { 479711479435236, 10, -14 }
+          }
+        },
+        segs denseg {
+          dim 2,
+          numseg 1,
+          ids {
+            local str "Query_1",
+            local str "Saccharomyces_cerevisiae_cen_pk113_7d_XV"
+          },
+          starts {
+            840,
+            9873
+          },
+          lens {
+            70
+          },
+          strands {
+            plus,
+            plus
+          }
+        }
+      },
+      {
+        type partial,
+        dim 2,
+        score {
+          {
+            id str "score",
+            value int 44
+          },
+          {
+            id str "e_value",
+            value real { 960589425853913, 10, -14 }
+          },
+          {
+            id str "bit_score",
+            value real { 409604178096031, 10, -13 }
+          },
+          {
+            id str "num_ident",
+            value int 69
+          },
+          {
+            id str "hsp_percent_coverage",
+            value real { 639318600368324, 10, -14 }
+          }
+        },
+        segs denseg {
+          dim 2,
+          numseg 5,
+          ids {
+            local str "Query_1",
+            local str "Pseudogymnoascus_pannorum_vkm_f_3775_contig_4332"
+          },
+          starts {
+            840,
+            4167,
+            845,
+            -1,
+            847,
+            4172,
+            -1,
+            4186,
+            861,
+            4188
+          },
+          lens {
+            5,
+            2,
+            14,
+            2,
+            75
+          },
+          strands {
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus,
+            plus
+          }
+        }
+      },
+      {
+        type partial,
+        dim 2,
+        score {
+          {
+            id str "score",
+            value int 44
+          },
+          {
+            id str "e_value",
+            value real { 960589425853913, 10, -14 }
+          },
+          {
+            id str "bit_score",
+            value real { 409604178096031, 10, -13 }
+          },
+          {
+            id str "num_ident",
+            value int 39
+          },
+          {
+            id str "hsp_percent_coverage",
+            value real { 356936771025169, 10, -14 }
+          }
+        },
+        segs denseg {
+          dim 2,
+          numseg 1,
+          ids {
+            local str "Query_1",
+            local str "Piloderma_croceum_f_1598_scaffold_00007"
+          },
+          starts {
+            546,
+            434056
+          },
+          lens {
+            50
+          },
+          strands {
+            minus,
+            plus
+          }
+        }
+      },
+      {
+        type partial,
+        dim 2,
+        score {
+          {
+            id str "score",
+            value int 44
+          },
+          {
+            id str "e_value",
+            value real { 960589425853913, 10, -14 }
+          },
+          {
+            id str "bit_score",
+            value real { 409604178096031, 10, -13 }
+          },
+          {
+            id str "num_ident",
+            value int 43
+          },
+          {
+            id str "hsp_percent_coverage",
+            value real { 399907918968692, 10, -14 }
+          }
+        },
+        segs denseg {
+          dim 2,
+          numseg 1,
+          ids {
+            local str "Query_1",
+            local str "Pestalotiopsis_fici_w106_1_PFICI_Scf_8"
+          },
+          starts {
+            852,
+            2598589
+          },
+          lens {
+            57
+          },
+          strands {
+            minus,
+            plus
+          }
+        }
+      },
+      {
+        type partial,
+        dim 2,
+        score {
+          {
+            id str "score",
+            value int 44
+          },
+          {
+            id str "e_value",
+            value real { 960589425853913, 10, -14 }
+          },
+          {
+            id str "bit_score",
+            value real { 409604178096031, 10, -13 }
+          },
+          {
+            id str "num_ident",
+            value int 42
+          },
+          {
+            id str "hsp_percent_coverage",
+            value real { 387630448127686, 10, -14 }
+          }
+        },
+        segs denseg {
+          dim 2,
+          numseg 1,
+          ids {
+            local str "Query_1",
+            local str "Exophiala_spinifera_supercont1.3"
+          },
+          starts {
+            322,
+            1901416
+          },
+          lens {
+            55
+          },
+          strands {
+            plus,
+            plus
+          }
+        }
+      },
+      {
+        type partial,
+        dim 2,
+        score {
+          {
+            id str "score",
+            value int 44
+          },
+          {
+            id str "e_value",
+            value real { 960589425853913, 10, -14 }
+          },
+          {
+            id str "bit_score",
+            value real { 409604178096031, 10, -13 }
+          },
+          {
+            id str "num_ident",
+            value int 43
+          },
+          {
+            id str "hsp_percent_coverage",
+            value real { 399907918968692, 10, -14 }
+          }
+        },
+        segs denseg {
+          dim 2,
+          numseg 1,
+          ids {
+            local str "Query_1",
+            local str "Endocarpon_pusillum_z07020_scaffold3350"
+          },
+          starts {
+            852,
+            482443
+          },
+          lens {
+            57
+          },
+          strands {
+            plus,
+            plus
+          }
+        }
+      },
+      {
+        type partial,
+        dim 2,
+        score {
+          {
+            id str "score",
+            value int 44
+          },
+          {
+            id str "e_value",
+            value real { 960589425853913, 10, -14 }
+          },
+          {
+            id str "bit_score",
+            value real { 409604178096031, 10, -13 }
+          },
+          {
+            id str "num_ident",
+            value int 39
+          },
+          {
+            id str "hsp_percent_coverage",
+            value real { 356936771025169, 10, -14 }
+          }
+        },
+        segs denseg {
+          dim 2,
+          numseg 1,
+          ids {
+            local str "Query_1",
+            local str "Endocarpon_pusillum_z07020_scaffold5444"
+          },
+          starts {
+            549,
+            2440
+          },
+          lens {
+            50
+          },
+          strands {
+            minus,
+            plus
+          }
+        }
+      },
+      {
+        type partial,
+        dim 2,
+        score {
+          {
+            id str "score",
+            value int 44
+          },
+          {
+            id str "e_value",
+            value real { 960589425853913, 10, -14 }
+          },
+          {
+            id str "bit_score",
+            value real { 409604178096031, 10, -13 }
+          },
+          {
+            id str "num_ident",
+            value int 57
+          },
+          {
+            id str "hsp_percent_coverage",
+            value real { 54109883364027, 10, -13 }
+          }
+        },
+        segs denseg {
+          dim 2,
+          numseg 1,
+          ids {
+            local str "Query_1",
+            local str "Aspergillus_flavus_JCVI-afl1-v2_0_EQ963473"
+          },
+          starts {
+            840,
+            2752867
+          },
+          lens {
+            80
+          },
+          strands {
+            plus,
+            plus
+          }
+        }
+      }
+    },
+    masks {
+      {
+        locations {
+          packed-int {
+            {
+              from 241,
+              to 280,
+              id local str "Query_1"
+            }
+          }
+        },
+        frame plus1
+      }
+    },
+    ka-blocks {
+      {
+        lambda { 633731443099174, 10, -15 },
+        k { 408145662544724, 10, -15 },
+        h { 91243839227971, 10, -14 },
+        gapped FALSE
+      },
+      {
+        lambda { 625, 10, -3 },
+        k { 41, 10, -2 },
+        h { 78, 10, -2 },
+        gapped TRUE
+      }
+    },
+    search-stats {
+      "Effective search space: 20551910370336",
+      "Effective search space used: 20551910370336",
+      "Length adjustment: 36"
+    }
+  }
+}

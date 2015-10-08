@@ -1,0 +1,60 @@
+%!PS-Adobe-3.0 EPSF-3.0
+%%BoundingBox: 20 20 200 1698 
+%%Title: 5_gblocks/ASTA+4.blastclust_95.tcoffee.aln.fa
+%%Creator Gblocks 0.91b
+%%Pages: 1
+
+/seq {
+newpath
+ 25   moveto
+0  10   rlineto
+  35   lineto
+0 -10 rlineto
+closepath
+fill
+} def
+
+/block {
+newpath
+ 10   moveto
+0  10   rlineto
+  20   lineto
+0 -10 rlineto
+closepath
+fill
+} def
+
+/sh1 {
+30 add
+} def
+
+/sh2 {
+31 add
+} def
+
+/Helvetica findfont 12 scalefont setfont
+
+gsave
+180 0 translate
+90 rotate
+
+newpath
+30 100 moveto
+(Blocks found by Gblocks version 0.91b for the file ASTA+4.blastclust_95.tcoffee.aln.fa.gbPS) show
+30 80 moveto
+(Parameters used: 86 86 8 7 3) show
+
+1 sh1 1648 sh2 seq
+
+406 sh1 439 sh2 block
+509 sh1 531 sh2 block
+593 sh1 804 sh2 block
+863 sh1 1035 sh2 block
+1057 sh1 1082 sh2 block
+1099 sh1 1119 sh2 block
+1229 sh1 1255 sh2 block
+1338 sh1 1344 sh2 block
+
+grestore
+showpage
+%%EOF

@@ -1,0 +1,60 @@
+%!PS-Adobe-3.0 EPSF-3.0
+%%BoundingBox: 20 20 200 1254 
+%%Title: 5_gblocks/ASTA+4.blastclust_99.muscle.aln.fa
+%%Creator Gblocks 0.91b
+%%Pages: 1
+
+/seq {
+newpath
+ 25   moveto
+0  10   rlineto
+  35   lineto
+0 -10 rlineto
+closepath
+fill
+} def
+
+/block {
+newpath
+ 10   moveto
+0  10   rlineto
+  20   lineto
+0 -10 rlineto
+closepath
+fill
+} def
+
+/sh1 {
+30 add
+} def
+
+/sh2 {
+31 add
+} def
+
+/Helvetica findfont 12 scalefont setfont
+
+gsave
+180 0 translate
+90 rotate
+
+newpath
+30 100 moveto
+(Blocks found by Gblocks version 0.91b for the file ASTA+4.blastclust_99.muscle.aln.fa.gbPS) show
+30 80 moveto
+(Parameters used: 100 100 8 7 3) show
+
+1 sh1 1204 sh2 seq
+
+169 sh1 205 sh2 block
+247 sh1 267 sh2 block
+286 sh1 494 sh2 block
+512 sh1 546 sh2 block
+582 sh1 737 sh2 block
+750 sh1 762 sh2 block
+904 sh1 926 sh2 block
+963 sh1 992 sh2 block
+
+grestore
+showpage
+%%EOF
