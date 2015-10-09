@@ -1,0 +1,10 @@
+(
+(
+Saccharomyces_bayanus:0.03000,
+gi|477513320|gb|ENH65823.1|:0.23000)
+:0.00875,
+(
+Saccharomyces_kudriavzevii:0.01875,
+Saccharomyces_mikatae:0.03125)
+:0.00375,
+Saccharomyces_paradoxus:0.01625);
