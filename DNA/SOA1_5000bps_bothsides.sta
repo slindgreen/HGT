@@ -1,0 +1,19 @@
+
+
+
+    Status of the program run:
+    ==========================
+
+      program call:  /home/programs/dialign_package/src/dialign2-2 -lgs SOA1_5000bps_bothsides.fa  
+
+      iteration step 3 in multiple alignment
+
+      aligning seq 17 / seq 20
+      total number of sequences: 31
+
+      current position in sequence 17:     11600
+      length of seq 17:                    11629
+
+
+
+
